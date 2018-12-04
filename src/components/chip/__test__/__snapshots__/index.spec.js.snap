@@ -1,0 +1,74 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Chip with avatar adds the avatar class to the element 1`] = `
+<ThemedChip
+  className=""
+  composeTheme="deeply"
+  deletable={false}
+  mapThemrProps={[Function]}
+  theme={
+    Object {
+      "avatar": "avatar-class",
+    }
+  }
+>
+  <Chip
+    className=""
+    deletable={false}
+    theme={
+      Object {
+        "avatar": "avatar-class",
+      }
+    }
+  >
+    <div
+      className="avatar-class"
+      data-mymoid="chip"
+    >
+      <Avatar
+        title="Test"
+      >
+        <span>
+          Test
+        </span>
+      </Avatar>
+      <span>
+        Test
+      </span>
+    </div>
+  </Chip>
+</ThemedChip>
+`;
+
+exports[`Chip with avatar without avatar does not add avatar class to the element 1`] = `
+<ThemedChip
+  className=""
+  composeTheme="deeply"
+  deletable={false}
+  mapThemrProps={[Function]}
+  theme={
+    Object {
+      "avatar": "avatar-class",
+    }
+  }
+>
+  <Chip
+    className=""
+    deletable={false}
+    theme={
+      Object {
+        "avatar": "avatar-class",
+      }
+    }
+  >
+    <div
+      className=""
+      data-mymoid="chip"
+    >
+      <span>
+        Test
+      </span>
+    </div>
+  </Chip>
+</ThemedChip>
+`;

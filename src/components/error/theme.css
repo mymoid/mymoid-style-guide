@@ -1,0 +1,13 @@
+@import '../../colors.css';
+@import '../../variables.css';
+@import './config.css';
+
+.error {
+  @apply --reset;
+
+  font-family: Lato;
+  font-size: var(--error-font-size);
+  color: var(--error-color);
+  letter-spacing: 0;
+  padding: var(--error-padding);
+}

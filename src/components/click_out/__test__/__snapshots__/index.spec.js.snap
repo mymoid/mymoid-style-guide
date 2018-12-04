@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ClickOutside /> Click event should call cb when click outside 1`] = `
+<ClickOutside
+  onClickOut={[MockFunction]}
+>
+  <div
+    onMouseDown={[Function]}
+  >
+    <span>
+      Pepe
+    </span>
+  </div>
+</ClickOutside>
+`;
+
+exports[`<ClickOutside /> Click event should capture click when click outside 1`] = `
+<Fixture>
+  <div
+    className="root"
+  >
+    <ClickOutside
+      onClickOut={[MockFunction]}
+    >
+      <div
+        onMouseDown={[Function]}
+      >
+        <span>
+          Pepe
+        </span>
+      </div>
+    </ClickOutside>
+  </div>
+</Fixture>
+`;
+
+exports[`<ClickOutside /> Should render a ClickOutside 1`] = `
+<div
+  onMouseDown={[Function]}
+>
+  <span>
+    Pepe
+  </span>
+</div>
+`;

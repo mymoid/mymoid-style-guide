@@ -1,0 +1,33 @@
+@import '../../colors.css';
+@import '../../variables.css';
+@import './config.css';
+
+.codeInput {
+  & > *:focus {
+    outline: none;
+  }
+
+  & > *::-webkit-input-placeholder {
+    font-family: Lato;
+    font-weight: 300;
+    font-size: var(--otp-input-font-size);
+    color: var(--otp-input-placeholder-color);
+    letter-spacing: 8px;
+  }
+
+  input[type='number']::-webkit-outer-spin-button,
+  input[type='number']::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  input[type='text']::-webkit-input-placeholder {
+    font-family: Lato;
+    font-weight: 300;
+    font-size: 48px;
+    color: #d8d8d8;
+    letter-spacing: 8px;
+  }
+  input[type='number'] {
+    -moz-appearance: textfield;
+  }
+}

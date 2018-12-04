@@ -1,0 +1,30 @@
+@import '../../colors.css';
+@import '../../variables.css';
+@import './config.css';
+
+.horizontal {
+  & > [data-mymoid='button'],
+  & > [data-mymoid='link'] {
+    display: inline-block;
+    margin: 0 calc(var(--navigation-space) / 2);
+  }
+}
+
+.vertical {
+  & > [data-mymoid='button'],
+  & > [data-mymoid='link'] {
+    display: block;
+    margin: calc(var(--navigation-space) / 2);
+  }
+}
+
+.vertical,
+.horizontal {
+  padding: calc(var(--navigation-space) / 2);
+
+  @apply --reset;
+
+  & > [data-mymoid='link'] {
+    color: var(--navigation-color);
+  }
+}

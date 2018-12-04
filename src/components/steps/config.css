@@ -1,0 +1,25 @@
+:root {
+  --stepDescriptionMaxWidth: 100px;
+  --steps-primary-color: rgba(23, 174, 140, 100);
+  --steps-secondary-color: rgba(178, 211, 204, 100);
+  --process-color: var(--steps-primary-color);
+  --no-process-color: var(--steps-secondary-color);
+  --steps-head-inner-size: calc(2.4 * var(--unit));
+  --process-icon-color: var(--primary-color);
+  --process-title-color: #666;
+  --process-description-color: var(--process-title-color);
+  --process-tail-color: var(--steps-secondary-color);
+  --wait-icon-color: var(--no-process-color);
+  --wait-title-color: #999;
+  --wait-description-color: var(--wait-title-color);
+  --wait-tail-color: var(--no-process-color);
+  --finish-icon-color: var(--process-icon-color);
+  --finish-title-color: var(--wait-title-color);
+  --finish-description-color: var(--finish-title-color);
+  --finish-tail-color: var(--process-icon-color);
+  --error-icon-color: #f50;
+  --error-title-color: #f50;
+  --error-description-color: var(--wait-title-color);
+  --error-tail-color: var(--process-tail-color);
+  --ratio: 0.75;
+}

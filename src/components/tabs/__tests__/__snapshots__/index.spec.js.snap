@@ -1,0 +1,87 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tabs #render uses fixed when set 1`] = `
+<Tabs
+  fixed={true}
+  hideMode="unmounted"
+  index={0}
+  inverse={false}
+  theme={Object {}}
+>
+  <div
+    className=""
+    data-react-toolbox="tabs"
+  >
+    <div>
+      <nav>
+        <span
+          className=""
+          style={Object {}}
+        />
+      </nav>
+    </div>
+  </div>
+</Tabs>
+`;
+
+exports[`Tabs defaults to only rendering the current tab 1`] = `
+<Composition>
+  <Tabs
+    fixed={false}
+    hideMode="unmounted"
+    index={0}
+    inverse={false}
+    theme={
+      Object {
+        "pointer": "pointer-class",
+      }
+    }
+  >
+    <div
+      className=""
+      data-react-toolbox="tabs"
+    >
+      <div>
+        <nav>
+          <span
+            className="pointer-class"
+            style={Object {}}
+          />
+        </nav>
+      </div>
+    </div>
+  </Tabs>
+</Composition>
+`;
+
+exports[`Tabs renders inactive tabs when hideMode is set to display 1`] = `
+<Composition
+  hideMode="display"
+>
+  <Tabs
+    fixed={false}
+    hideMode="display"
+    index={0}
+    inverse={false}
+    theme={
+      Object {
+        "pointer": "pointer-class",
+      }
+    }
+  >
+    <div
+      className=""
+      data-react-toolbox="tabs"
+    >
+      <div>
+        <nav>
+          <span
+            className="pointer-class"
+            style={Object {}}
+          />
+        </nav>
+      </div>
+    </div>
+  </Tabs>
+</Composition>
+`;

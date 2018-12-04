@@ -1,0 +1,6 @@
+:root {
+  --menu-profile-title-color: var(--color-black);
+  --menu-profile-title-active-color: var(--color-white);
+  --menu-profile-subtitle-color: #1b4354; /*TODO: --color-text-secondary for example*/
+  --menu-profile-subtitle-active-color: var(--color-white);
+}

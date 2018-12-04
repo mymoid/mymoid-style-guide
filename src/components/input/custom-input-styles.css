@@ -1,0 +1,5 @@
+:root {
+  --input-text-bottom-border-color: color(var(--palette-grey-500) a(100%));
+  --color-text: rgba(102, 101, 98, 100);
+  --color-primary: rgba(23, 174, 140, 100);
+}

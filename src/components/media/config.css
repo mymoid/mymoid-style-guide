@@ -1,0 +1,9 @@
+:root {
+  --media-color-white: var(--color-white);
+  --media-text-overlay: color(var(--color-black) a(35%));
+  --media-background-color: var(--media-color-white);
+  --media-padding-sm: calc(0.8 * var(--unit));
+  --media-padding: calc(1.6 * var(--unit));
+  --media-padding-lg: calc(2 * var(--unit));
+  --media-font-size: var(--font-size-small);
+}

@@ -1,0 +1,8 @@
+:root {
+  --drawer-background-color: #002838; /*TODO var(--palette-grey-50);*/
+  --drawer-text-color: var(--palette-grey-800);
+  --drawer-width: calc(24 * var(--unit));
+  --drawer-desktop-width: calc(4.2 * var(--standard-increment-desktop));
+  --drawer-mobile-width: 269px; /*calc(5 * var(--standard-increment-mobile))*/
+  --drawer-left: 60px;
+}

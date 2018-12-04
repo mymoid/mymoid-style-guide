@@ -1,0 +1,255 @@
+@import '../../colors.css';
+@import '../../variables.css';
+@import '../../media.css';
+@import './config.css';
+
+@import '../app_bar/config.css';
+@import '../drawer/config.css';
+
+:root {
+  --layout-side-transition: all var(--animation-duration)
+    var(--animation-curve-default);
+}
+
+.layout {
+  align-items: stretch;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  min-width: 100%;
+  position: relative;
+
+  @apply --reset;
+}
+
+.panel {
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+
+  &:not(.bodyScroll) {
+    height: 100vh;
+    max-height: 100vh;
+    overflow-y: scroll;
+  }
+}
+
+.navDrawerDrawer {
+  z-index: var(--z-index-high);
+
+  &.pinned {
+    box-shadow: none;
+    left: 0;
+  }
+
+  &.clipped {
+    height: calc(100vh - var(--appbar-height));
+    padding-top: calc(0.5 * var(--unit));
+    top: var(--appbar-height);
+
+    @media screen and (--xxs-viewport) and (--portrait) {
+      height: calc(100vh - var(--appbar-height-m-portrait));
+      top: var(--appbar-height-m-portrait);
+    }
+
+    @media screen and (--xs-viewport) and (--landscape) {
+      height: calc(100vh - var(--appbar-height-m-landscape));
+      top: var(--appbar-height-m-landscape);
+    }
+  }
+}
+
+.appbarInner,
+.panel {
+  transition: var(--layout-side-transition);
+}
+
+.appbarFixed {
+  &.appbarAppBar {
+    z-index: var(--z-index-high);
+  }
+
+  & .panel {
+    top: var(--appbar-height);
+
+    &:not(.bodyScroll) {
+      height: calc(100vh - var(--appbar-height));
+      max-height: calc(100vh - var(--appbar-height));
+      overflow-y: scroll;
+    }
+
+    @media screen and (--xxs-viewport) and (--portrait) {
+      top: var(--appbar-height-m-portrait);
+    }
+
+    @media screen and (--xs-viewport) and (--landscape) {
+      top: var(--appbar-height-m-landscape);
+    }
+  }
+}
+
+.navDrawerPinned {
+  & .appbarLeftIcon {
+    display: none;
+  }
+
+  & .panel {
+    left: var(--drawer-mobile-width);
+  }
+
+  &:not(.navDrawerClipped) {
+    & .appbarAppBar {
+      padding-left: calc(var(--drawer-mobile-width) + var(--appbar-h-padding));
+    }
+  }
+
+  @media screen and (--larger-than-xs-viewport) {
+    & .panel {
+      left: var(--drawer-desktop-width);
+    }
+
+    &:not(.navDrawerClipped) {
+      & .appbarAppBar {
+        padding-left: calc(
+          var(--drawer-desktop-width) + var(--appbar-h-padding)
+        );
+      }
+    }
+  }
+}
+
+.navDrawerClipped {
+  & .navDrawerWrapper {
+    position: relative;
+    z-index: var(--z-index-normal);
+  }
+}
+
+.panelFloatingCentered {
+  margin-left: auto;
+  position: relative;
+  margin-right: auto;
+  margin-top: calc(0.35 * var(--floating-panel-height));
+  margin-bottom: calc(0.35 * var(--floating-panel-height));
+}
+
+.panelContent {
+  background: var(--panel-content-background-color);
+  box-shadow: 0 5px 40px 0 rgba(0, 0, 0, 0.31);
+  border-radius: calc(0.1 * var(--unit));
+}
+
+.panelActions {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: var(--panel-padding-sm);
+  background: var(--panel-actions-background);
+  opacity: var(--panel-actions-background-opacity);
+  box-shadow: var(--panel-actions-box-shadow);
+
+  & [data-mymoid='button'] {
+    margin: 0 calc(var(--panel-padding-sm) / 2);
+    min-width: 0;
+    padding: 0 var(--panel-padding-sm);
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.panelTitle {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: var(--panel-title-padding-sm);
+}
+
+@define-mixin sidebarIncrements $platform {
+  & .sidebarDrawer {
+    width: calc(var(--standard-increment-$(platform)) * $(increment));
+  }
+
+  &.sidebarPinned {
+    & .panel {
+      right: calc(var(--standard-increment-$(platform)) * $(increment));
+    }
+
+    &:not(.sidebarClipped) {
+      & .appbarAppBar {
+        padding-right: calc(
+          var(--standard-increment-$(platform)) * $(increment) +
+            var(--appbar-h-padding)
+        );
+      }
+    }
+  }
+}
+
+@each $increment in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 {
+  .sidebarWidth$(increment) {
+    & .sidebarDrawer {
+      width: 100%;
+    }
+
+    @media screen and (--larger-than-sm-viewport) {
+      @mixin sidebarIncrements desktop;
+    }
+  }
+}
+
+@each $increment in 1, 2, 3, 4, 5, 6, 7, 8, 9 {
+  .sidebarWidth$(increment) {
+    @media screen and (--larger-than-xs-viewport) and (--landscape) {
+      @mixin sidebarIncrements mobile;
+    }
+
+    @media screen and (--larger-than-xs-viewport) and (orientation: portrait) {
+      @mixin sidebarIncrements desktop;
+    }
+  }
+}
+
+@each $increment in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 {
+  .sidebarWidth$(increment) {
+    @media screen and (--larger-than-sm-tablet-viewport) {
+      @mixin sidebarIncrements desktop;
+    }
+  }
+}
+
+@each $pct in 25, 33, 50, 66, 75, 100 {
+  .sidebarWidth$(pct) {
+    & .sidebarDrawer {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (--larger-than-sm-tablet-viewport) {
+  @each $pct in 25, 33, 50, 66, 75, 100 {
+    .sidebarWidth$(pct) {
+      & .panel {
+        right: calc($(pct) * 1%);
+      }
+
+      & .sidebarDrawer {
+        width: calc($(pct) * 1%);
+      }
+
+      &:not(.sidebarClipped) {
+        & .appbarAppBar {
+          padding-right: calc(calc($(pct) * 1%) + var(--appbar-h-padding));
+        }
+      }
+    }
+  }
+}

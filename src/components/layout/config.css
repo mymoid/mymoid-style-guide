@@ -1,0 +1,12 @@
+:root {
+  --layout-background-image: var(--gradient);
+  --panel-content-background-color: var(--palette-grey-50);
+  --floating-panel-height: calc(50 * var(--unit));
+  --panel-padding-sm: calc(2 * var(--unit));
+  --panel-title-padding-sm: calc(4 * var(--unit));
+  /*TODO: calc from palete, principal colors*/
+  --panel-actions-background: rgb(33, 83, 72);
+  --panel-actions-background-opacity: 0.9;
+  /*TODO: maybe boxshadows calculated palete?????*/
+  --panel-actions-box-shadow: 0 5px 41px 0 rgba(0, 0, 0, 0.5);
+}

@@ -1,0 +1,85 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Otp #render renders without error 1`] = `
+<div
+  className="code-class"
+  style={Object {}}
+>
+  <input
+    autoComplete="off"
+    autoFocus="autoFocus"
+    data-valid={true}
+    defaultValue=""
+    disabled={false}
+    id={0}
+    key="input_0"
+    max={9}
+    maxLength={1}
+    min={0}
+    onBlur={[Function]}
+    onChange={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    placeholder="•"
+    style={Object {}}
+    type="text"
+  />
+  <input
+    autoComplete="off"
+    autoFocus=""
+    data-valid={true}
+    defaultValue=""
+    disabled={false}
+    id={1}
+    key="input_1"
+    max={9}
+    maxLength={1}
+    min={0}
+    onBlur={[Function]}
+    onChange={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    placeholder="•"
+    style={Object {}}
+    type="text"
+  />
+  <input
+    autoComplete="off"
+    autoFocus=""
+    data-valid={true}
+    defaultValue=""
+    disabled={false}
+    id={2}
+    key="input_2"
+    max={9}
+    maxLength={1}
+    min={0}
+    onBlur={[Function]}
+    onChange={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    placeholder="•"
+    style={Object {}}
+    type="text"
+  />
+  <input
+    autoComplete="off"
+    autoFocus=""
+    data-valid={true}
+    defaultValue=""
+    disabled={false}
+    id={3}
+    key="input_3"
+    max={9}
+    maxLength={1}
+    min={0}
+    onBlur={[Function]}
+    onChange={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    placeholder="•"
+    style={Object {}}
+    type="text"
+  />
+</div>
+`;

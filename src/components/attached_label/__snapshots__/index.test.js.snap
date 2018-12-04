@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Index /> should render Attached label 1`] = `
+<div>
+  <div
+    className="sc-bwzfXH gJIwTT"
+  >
+    <span
+      className="sc-htpNat kugwQL"
+    />
+  </div>
+  <div
+    className="sc-bdVaJa fwgixs"
+  />
+</div>
+`;
+
+exports[`<Index /> should render above 1`] = `
+<div>
+  <div
+    className="sc-bdVaJa fwgixs"
+  />
+  <div
+    className="sc-bwzfXH gJIwTT"
+  >
+    <span
+      className="sc-htpNat kkUNoq"
+    />
+  </div>
+</div>
+`;
+
+exports[`<Index /> should render below 1`] = `
+<div>
+  <div
+    className="sc-bwzfXH gJIwTT"
+  >
+    <span
+      className="sc-htpNat kugwQL"
+    />
+  </div>
+  <div
+    className="sc-bdVaJa fwgixs"
+  />
+</div>
+`;

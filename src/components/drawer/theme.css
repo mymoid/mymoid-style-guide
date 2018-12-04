@@ -1,0 +1,62 @@
+@import '../../colors.css';
+@import '../../variables.css';
+@import '../../media.css';
+@import '../app_bar/config.css';
+@import './config.css';
+
+.wrapper {
+  position: relative;
+  z-index: var(--z-index-zero);
+}
+
+.drawer {
+  background-color: var(--drawer-background-color);
+  box-shadow: var(--shadow-2p);
+  color: var(--drawer-text-color);
+  display: block;
+  height: 100vh;
+  /*overflow-x: hidden;*/
+  /*overflow-y: auto;*/
+  pointer-events: none;
+  position: fixed;
+  top: var(--appbar-height); /*TODO: top: 0, */
+  transform-style: preserve-3d;
+  transition: transform var(--animation-duration) var(--animation-curve-default);
+  transition-delay: 0s;
+  width: var(--drawer-mobile-width);
+  will-change: transform;
+
+  @apply --reset;
+
+  &.active {
+    pointer-events: all;
+    transform: translateX(0px);
+    transition-delay: var(--animation-delay);
+  }
+
+  &.right {
+    right: 0;
+
+    &:not(.active) {
+      pointer-events: all; /*TODO: remove this, may be need an collapse state  */
+      transform: translateX(100%);
+    }
+  }
+
+  &.left {
+    left: 0;
+
+    &:not(.active) {
+      pointer-events: all; /*TODO: remove this, may be need an collapse state  */
+      transform: translateX(
+        calc(calc(-1 * 100%) + 60px)
+      ); /*TODO: override in dashboard.css*/
+    }
+  }
+}
+
+@media screen and (--larger-than-xs-viewport) {
+  .drawer {
+    width: var(--drawer-desktop-width);
+  }
+}

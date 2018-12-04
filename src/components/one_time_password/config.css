@@ -1,0 +1,4 @@
+:root {
+  --otp-input-font-size: calc(4.8 * var(--unit));
+  --otp-input-placeholder-color: #d8d8d8;
+}

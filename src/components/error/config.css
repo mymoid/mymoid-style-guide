@@ -1,0 +1,5 @@
+:root {
+  --error-font-size: calc(var(--unit) * 1.4);
+  --error-color: #d0021b;
+  --error-padding: calc(var(--unit) * 3) 0;
+}

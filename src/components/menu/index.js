@@ -1,0 +1,31 @@
+import { themr } from 'react-css-themr';
+import { MENU } from '../identifiers';
+import { Avatar } from '../avatar';
+import { Button, IconButton } from '../button';
+import { MenuDivider } from './MenuDivider';
+import { menuItemFactory } from './MenuItem';
+import { menuFactory } from './Menu';
+import { iconMenuFactory } from './IconMenu';
+import { popoverMenuFactory } from './PopoverMenu';
+import { profileTitleFactory } from './ProfileTitle';
+import themedRippleFactory from '../ripple';
+import theme from './theme.css';
+import productionTheme from './productionTheme.css';
+
+const applyTheme = Component => themr(MENU, theme)(Component);
+const ThemedMenuDivider = applyTheme(MenuDivider);
+const ThemedMenuItem = applyTheme(menuItemFactory(themedRippleFactory({})));
+const ThemedMenu = applyTheme(menuFactory(ThemedMenuItem));
+const ThemedIconMenu = applyTheme(iconMenuFactory(IconButton, ThemedMenu));
+const ThemedPopoverMenu = applyTheme(popoverMenuFactory(Button, ThemedMenu));
+const ProfileTitle = profileTitleFactory(Avatar);
+const ThemedSandboxProfileTitle = themr(MENU, theme)(ProfileTitle);
+const ThemedProductionProfileTitle = themr(MENU, productionTheme)(ProfileTitle);
+
+export { ThemedMenuDivider as MenuDivider };
+export { ThemedMenuItem as MenuItem };
+export { ThemedMenu as Menu };
+export { ThemedIconMenu as IconMenu };
+export { ThemedPopoverMenu as PopoverMenu };
+export { ThemedSandboxProfileTitle as SandboxProfileTitle };
+export { ThemedProductionProfileTitle as ProductionProfileTitle };
