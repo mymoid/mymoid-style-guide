@@ -10,6 +10,7 @@ export * from './checkbox';
 export * from './confirm_submit';
 export * from './chip';
 export * from './dialog';
+export * from './drawer';
 export * from './dropdown';
 export * from './error';
 export * from './font_icon';
