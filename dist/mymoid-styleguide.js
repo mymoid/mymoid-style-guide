@@ -28938,6 +28938,8 @@ var _templateObject = _taggedTemplateLiteral(['\n  display: flex;\n  flex-direct
 
 function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
+function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
+
 
 
 
@@ -28945,17 +28947,17 @@ function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defi
 // eslint-disable-next-line
 var Notification = function Notification(_ref) {
   var msg = _ref.msg,
-      visible = _ref.visible,
-      width = _ref.width,
-      error = _ref.error;
+      rest = _objectWithoutProperties(_ref, ['msg']);
+
   return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
     NotificationContainer,
-    { visible: visible, width: width, __source: {
+    Object.assign({}, rest, {
+      __source: {
         fileName: _jsxFileName,
         lineNumber: 7
       },
       __self: _this
-    },
+    }),
     msg
   );
 };
@@ -28963,7 +28965,8 @@ var Notification = function Notification(_ref) {
 Notification.propTypes = {
   msg: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.string,
   visible: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.bool,
-  width: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.number
+  width: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.number,
+  error: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.bool
 };
 
 /* harmony default export */ __webpack_exports__["a"] = (Notification);
@@ -28971,7 +28974,7 @@ Notification.propTypes = {
 var NotificationContainer = __WEBPACK_IMPORTED_MODULE_2_styled_components__["a" /* default */].div(_templateObject, function (props) {
   return props.width ? 'left: calc(50% - ' + props.width / 2 + 'px);' : 'left: 50%';
 }, function (props) {
-  return props.error ? 'background: rgb(222, 50, 38);' : 'background: rgba(51, 180, 7, 100);';
+  return props.error ? 'background: rgba(222, 50, 38, 100);' : 'background: rgba(51, 180, 7, 100);';
 }, function (props) {
   return props.visible ? 'transform: translateY(-80%); opacity: 1;' : null;
 }, function (props) {
