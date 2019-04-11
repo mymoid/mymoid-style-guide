@@ -28934,7 +28934,7 @@ var ThemedNavigation = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_react_c
 var _jsxFileName = '/Users/dalogon/Projects/12-technoactivity-projects/15-mymoid-styleguide/mymoid-style-guide/src/components/notification/index.js',
     _this = this;
 
-var _templateObject = _taggedTemplateLiteral(['\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  position: fixed;\n  bottom: 0;\n  ', ';\n  right: 50%;\n  background: rgba(51, 180, 7, 100);\n  min-width: 200px;\n  height: 50px;\n  font-family: Lato;\n  font-weight: 300;\n  font-size: 16px;\n  color: #fff;\n  border-radius: 3px;\n  text-align: center;\n  transform: translateY(100%);\n  opacity: 0;\n  transition: all ease-in-out 0.3s;\n  padding: 0 10px;\n  ', ';\n  ', ';\n'], ['\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  position: fixed;\n  bottom: 0;\n  ', ';\n  right: 50%;\n  background: rgba(51, 180, 7, 100);\n  min-width: 200px;\n  height: 50px;\n  font-family: Lato;\n  font-weight: 300;\n  font-size: 16px;\n  color: #fff;\n  border-radius: 3px;\n  text-align: center;\n  transform: translateY(100%);\n  opacity: 0;\n  transition: all ease-in-out 0.3s;\n  padding: 0 10px;\n  ', ';\n  ', ';\n']);
+var _templateObject = _taggedTemplateLiteral(['\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  position: fixed;\n  bottom: 0;\n  ', ';\n  ', ';\n  right: 50%;\n  min-width: 200px;\n  height: 50px;\n  font-family: Lato;\n  font-weight: 300;\n  font-size: 16px;\n  color: #fff;\n  border-radius: 3px;\n  text-align: center;\n  transform: translateY(100%);\n  opacity: 0;\n  transition: all ease-in-out 0.3s;\n  padding: 0 10px;\n  ', ';\n  ', ';\n'], ['\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  position: fixed;\n  bottom: 0;\n  ', ';\n  ', ';\n  right: 50%;\n  min-width: 200px;\n  height: 50px;\n  font-family: Lato;\n  font-weight: 300;\n  font-size: 16px;\n  color: #fff;\n  border-radius: 3px;\n  text-align: center;\n  transform: translateY(100%);\n  opacity: 0;\n  transition: all ease-in-out 0.3s;\n  padding: 0 10px;\n  ', ';\n  ', ';\n']);
 
 function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
@@ -28946,7 +28946,8 @@ function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defi
 var Notification = function Notification(_ref) {
   var msg = _ref.msg,
       visible = _ref.visible,
-      width = _ref.width;
+      width = _ref.width,
+      error = _ref.error;
   return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
     NotificationContainer,
     { visible: visible, width: width, __source: {
@@ -28969,6 +28970,8 @@ Notification.propTypes = {
 
 var NotificationContainer = __WEBPACK_IMPORTED_MODULE_2_styled_components__["a" /* default */].div(_templateObject, function (props) {
   return props.width ? 'left: calc(50% - ' + props.width / 2 + 'px);' : 'left: 50%';
+}, function (props) {
+  return props.error ? 'background: rgb(222, 50, 38);' : 'background: rgba(51, 180, 7, 100);';
 }, function (props) {
   return props.visible ? 'transform: translateY(-80%); opacity: 1;' : null;
 }, function (props) {
