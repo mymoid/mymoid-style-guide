@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 // eslint-disable-next-line
-const Notification = ({ msg, visible, width }) => (
+const Notification = ({ msg, visible, width, error }) => (
   <NotificationContainer visible={visible} width={width}>
     {msg}
   </NotificationContainer>
@@ -25,8 +25,9 @@ const NotificationContainer = styled.div`
   bottom: 0;
   ${props =>
     props.width ? `left: calc(50% - ${props.width / 2}px);` : 'left: 50%'};
+  ${props =>
+    props.error ? `background: rgb(222, 50, 38);`: `background: rgba(51, 180, 7, 100);`};
   right: 50%;
-  background: rgba(51, 180, 7, 100);
   min-width: 200px;
   height: 50px;
   font-family: Lato;
