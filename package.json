@@ -6,7 +6,8 @@
   "scripts": {
     "test": "jest",
     "test:watch": "jest --watch",
-    "lib": "NODE_ENV=development webpack --config ./config/webpack.lib.js --watch"
+    "start": "NODE_ENV=development webpack --config ./config/webpack.lib.js --watch",
+    "lib": "NODE_ENV=development webpack --config ./config/webpack.lib.js --progress"
   },
   "devDependencies": {
     "autoprefixer": "7.1.1",
@@ -54,7 +55,16 @@
     "webfonts-loader": "^2.0.1",
     "webpack": "2.6.1",
     "webpack-dev-server": "2.5.0",
-    "whatwg-fetch": "2.0.3"
+    "whatwg-fetch": "2.0.3",
+    "classnames": "^2.2.6",
+    "prop-types": "^15.6.2",
+    "ramda": "^0.26.1",
+    "react": "^16.6.3",
+    "react-css-themr": "^2.1.2",
+    "react-dom": "^16.6.3",
+    "react-style-proptype": "^3.0.0",
+    "react-tooltip": "^3.5.1",
+    "styled-components": "^4.1.2"
   },
   "jest": {
     "collectCoverageFrom": [
@@ -102,7 +112,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
+  "peerDependencies": {
     "classnames": "^2.2.6",
     "prop-types": "^15.6.2",
     "ramda": "^0.26.1",
