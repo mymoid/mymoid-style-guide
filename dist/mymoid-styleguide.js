@@ -720,9 +720,6 @@ function updateLink (link, options, obj) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_classnames__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_classnames___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_classnames__);
-var _jsxFileName = '/Users/dalogon/Projects/12-technoactivity-projects/15-mymoid-styleguide/mymoid-style-guide/src/components/font_icon/FontIcon.js',
-    _this = this;
-
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
@@ -748,13 +745,7 @@ var FontIcon = function FontIcon(_ref) {
       className: __WEBPACK_IMPORTED_MODULE_2_classnames___default()({
         'material-icons': typeof value === 'string' || typeof children === 'string'
       }, className)
-    }, other, {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 14
-      },
-      __self: _this
-    }),
+    }, other),
     value,
     children
   ) :
@@ -762,12 +753,7 @@ var FontIcon = function FontIcon(_ref) {
   // http://google.github.io/material-design-icons/
   // https://github.com/sam7r/ligature-to-html-entity
   __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('span', {
-    className: __WEBPACK_IMPORTED_MODULE_2_classnames___default()(_defineProperty({}, iconsFamily, true), _defineProperty({}, iconsFamily + '-' + value, typeof value === 'string' || typeof children === 'string'), className),
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 33
-    },
-    __self: _this
+    className: __WEBPACK_IMPORTED_MODULE_2_classnames___default()(_defineProperty({}, iconsFamily, true), _defineProperty({}, iconsFamily + '-' + value, typeof value === 'string' || typeof children === 'string'), className)
   });
 };
 
@@ -998,8 +984,6 @@ process.umask = function() { return 0; };
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__identifiers__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__utils_events__ = __webpack_require__(15);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__utils_prefixer__ = __webpack_require__(114);
-var _jsxFileName = '/Users/dalogon/Projects/12-technoactivity-projects/15-mymoid-styleguide/mymoid-style-guide/src/components/ripple/Ripple.js';
-
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
@@ -1312,24 +1296,13 @@ var rippleFactory = function rippleFactory() {
               key: key,
               'data-mymoid': 'ripple',
               className: this.props.theme.rippleWrapper
-            }, props, {
-              __source: {
-                fileName: _jsxFileName,
-                lineNumber: 285
-              },
-              __self: this
-            }),
+            }, props),
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('span', {
               className: _className,
               ref: function ref(node) {
                 if (node) _this4.rippleNodes[key] = node;
               },
-              style: __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_8__utils_prefixer__["a" /* default */])({ transform: transform }, { width: width, height: width }),
-              __source: {
-                fileName: _jsxFileName,
-                lineNumber: 291
-              },
-              __self: this
+              style: __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_8__utils_prefixer__["a" /* default */])({ transform: transform }, { width: width, height: width })
             })
           );
         }
@@ -1620,8 +1593,6 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__font_icon_FontIcon__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__spinner_Dots__ = __webpack_require__(45);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ripple_Ripple__ = __webpack_require__(9);
-var _jsxFileName = '/Users/dalogon/Projects/12-technoactivity-projects/15-mymoid-styleguide/mymoid-style-guide/src/components/button/Button.js';
-
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
@@ -1730,17 +1701,7 @@ var factory = function factory(ripple, FontIcon, SpinnerDots) {
           'data-mymoid': 'button'
         });
 
-        return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(element, props, this.showIcon(icon, loading) ? __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(FontIcon, { className: theme.icon, value: icon, __source: {
-            fileName: _jsxFileName,
-            lineNumber: 154
-          },
-          __self: this
-        }) : null, this.showLabel(label, loading) ? label : null, loading ? __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(SpinnerDots, { size: 16, speed: 1, __source: {
-            fileName: _jsxFileName,
-            lineNumber: 157
-          },
-          __self: this
-        }) : null, children);
+        return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(element, props, this.showIcon(icon, loading) ? __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(FontIcon, { className: theme.icon, value: icon }) : null, this.showLabel(label, loading) ? label : null, loading ? __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(SpinnerDots, { size: 16, speed: 1 }) : null, children);
       }
     }]);
 
@@ -1896,9 +1857,6 @@ function transitionEventNamesFor(element) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_css_themr___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_react_css_themr__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__identifiers__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__font_icon_FontIcon__ = __webpack_require__(7);
-var _jsxFileName = '/Users/dalogon/Projects/12-technoactivity-projects/15-mymoid-styleguide/mymoid-style-guide/src/components/avatar/Avatar.js',
-    _this = this;
-
 function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
 
 
@@ -1925,44 +1883,18 @@ var factory = function factory(FontIcon) {
       Object.assign({
         'data-mymoid': 'avatar',
         className: __WEBPACK_IMPORTED_MODULE_2_classnames___default()(theme.avatar, className)
-      }, other, {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 20
-        },
-        __self: _this
-      }),
+      }, other),
       children,
       cover && typeof image === 'string' && __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('span', {
         'aria-label': alt,
         className: theme.image,
-        style: { backgroundImage: 'url(' + image + ')' },
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 28
-        },
-        __self: _this
+        style: { backgroundImage: 'url(' + image + ')' }
       }),
-      !cover && (typeof image === 'string' ? __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { alt: alt, className: theme.image, src: image, __source: {
-          fileName: _jsxFileName,
-          lineNumber: 36
-        },
-        __self: _this
-      }) : image),
-      typeof icon === 'string' ? __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(FontIcon, { className: theme.letter, value: icon, alt: alt, __source: {
-          fileName: _jsxFileName,
-          lineNumber: 41
-        },
-        __self: _this
-      }) : icon,
+      !cover && (typeof image === 'string' ? __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { alt: alt, className: theme.image, src: image }) : image),
+      typeof icon === 'string' ? __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(FontIcon, { className: theme.letter, value: icon, alt: alt }) : icon,
       title ? __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         'span',
-        { className: theme.letter, __source: {
-            fileName: _jsxFileName,
-            lineNumber: 45
-          },
-          __self: _this
-        },
+        { className: theme.letter },
         title
       ) : null
     );
@@ -2039,8 +1971,6 @@ var ThemedAvatar = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_react_css_t
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__identifiers__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__font_icon_FontIcon__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ripple_Ripple__ = __webpack_require__(9);
-var _jsxFileName = '/Users/dalogon/Projects/12-technoactivity-projects/15-mymoid-styleguide/mymoid-style-guide/src/components/button/IconButton.js';
-
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
@@ -2129,12 +2059,7 @@ var factory = function factory(ripple, FontIcon) {
         var iconElement = typeof icon === 'string' ? __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(FontIcon, {
           className: theme.icon,
           value: icon,
-          iconsFamily: 'mymoicons',
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 106
-          },
-          __self: this
+          iconsFamily: 'mymoicons'
         }) : icon;
 
         return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(element, props, icon && iconElement, children);
@@ -2209,8 +2134,6 @@ var IconButton = factory(__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_6__ripp
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__identifiers__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ripple_Ripple__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__Check__ = __webpack_require__(32);
-var _jsxFileName = '/Users/dalogon/Projects/12-technoactivity-projects/15-mymoid-styleguide/mymoid-style-guide/src/components/checkbox/Checkbox.js';
-
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
@@ -2295,12 +2218,7 @@ var factory = function factory(Check) {
             'data-mymoid': 'checkbox',
             className: className,
             onMouseEnter: onMouseEnter,
-            onMouseLeave: onMouseLeave,
-            __source: {
-              fileName: _jsxFileName,
-              lineNumber: 79
-            },
-            __self: this
+            onMouseLeave: onMouseLeave
           },
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', Object.assign({}, others, {
             checked: checked,
@@ -2312,33 +2230,18 @@ var factory = function factory(Check) {
             ref: function ref(node) {
               _this2.inputNode = node;
             },
-            type: 'checkbox',
-            __source: {
-              fileName: _jsxFileName,
-              lineNumber: 85
-            },
-            __self: this
+            type: 'checkbox'
           })),
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Check, {
             checked: checked,
             disabled: disabled,
             rippleClassName: theme.ripple,
             style: style,
-            theme: theme,
-            __source: {
-              fileName: _jsxFileName,
-              lineNumber: 98
-            },
-            __self: this
+            theme: theme
           }),
           label ? __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'span',
-            { 'data-mymoid': 'label', className: theme.text, __source: {
-                fileName: _jsxFileName,
-                lineNumber: 106
-              },
-              __self: this
-            },
+            { 'data-mymoid': 'label', className: theme.text },
             label
           ) : null,
           children
@@ -2414,8 +2317,6 @@ var Checkbox = factory(Check);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_react_css_themr___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_react_css_themr__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__identifiers__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__font_icon_FontIcon__ = __webpack_require__(7);
-var _jsxFileName = '/Users/dalogon/Projects/12-technoactivity-projects/15-mymoid-styleguide/mymoid-style-guide/src/components/input/Input.js';
-
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
@@ -2597,17 +2498,7 @@ var factory = function factory(FontIcon) {
 
         var className = __WEBPACK_IMPORTED_MODULE_2_classnames___default()(theme.formControlFeedback, (_classnames = {}, _defineProperty(_classnames, theme.error, error), _defineProperty(_classnames, theme.success, !error), _classnames));
 
-        var validationIcon = error ? __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(FontIcon, { className: className, value: 'help', __source: {
-            fileName: _jsxFileName,
-            lineNumber: 214
-          },
-          __self: this
-        }) : __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(FontIcon, { className: className, value: 'done', __source: {
-            fileName: _jsxFileName,
-            lineNumber: 216
-          },
-          __self: this
-        });
+        var validationIcon = error ? __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(FontIcon, { className: className, value: 'help' }) : __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(FontIcon, { className: className, value: 'done' });
 
         return validationIcon;
       }
@@ -2631,22 +2522,12 @@ var factory = function factory(FontIcon) {
           className: className,
           value: 'visibility_off',
           style: iconVisibilityStyle,
-          onClick: this.toggleVisibility,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 238
-          },
-          __self: this
+          onClick: this.toggleVisibility
         }) : __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(FontIcon, {
           className: className,
           value: 'visibility',
           style: iconVisibilityStyle,
-          onClick: this.toggleVisibility,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 245
-          },
-          __self: this
+          onClick: this.toggleVisibility
         });
 
         return validationIcon;
@@ -2720,73 +2601,33 @@ var factory = function factory(FontIcon) {
 
         return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           'div',
-          { 'data-mymoid': 'input', className: className, __source: {
-              fileName: _jsxFileName,
-              lineNumber: 335
-            },
-            __self: this
-          },
+          { 'data-mymoid': 'input', className: className },
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(multiline ? 'textarea' : 'input', inputElementProps),
-          icon ? __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(FontIcon, { className: theme.icon, value: icon, __source: {
-              fileName: _jsxFileName,
-              lineNumber: 340
-            },
-            __self: this
-          }) : null,
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('span', { className: theme.bar, __source: {
-              fileName: _jsxFileName,
-              lineNumber: 341
-            },
-            __self: this
-          }),
+          icon ? __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(FontIcon, { className: theme.icon, value: icon }) : null,
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('span', { className: theme.bar }),
           labelText ? __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'label',
-            { className: labelClassName, __source: {
-                fileName: _jsxFileName,
-                lineNumber: 343
-              },
-              __self: this
-            },
+            { className: labelClassName },
             labelText,
             required ? __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
               'span',
-              { className: theme.required, __source: {
-                  fileName: _jsxFileName,
-                  lineNumber: 345
-                },
-                __self: this
-              },
+              { className: theme.required },
               ' * '
             ) : null
           ) : null,
           hint ? __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'span',
-            { hidden: labelText, className: theme.hint, __source: {
-                fileName: _jsxFileName,
-                lineNumber: 349
-              },
-              __self: this
-            },
+            { hidden: labelText, className: theme.hint },
             hint
           ) : null,
           error ? __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'span',
-            { className: theme.error, __source: {
-                fileName: _jsxFileName,
-                lineNumber: 353
-              },
-              __self: this
-            },
+            { className: theme.error },
             error
           ) : null,
           maxLength ? __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'span',
-            { className: theme.counter, __source: {
-                fileName: _jsxFileName,
-                lineNumber: 355
-              },
-              __self: this
-            },
+            { className: theme.counter },
             length,
             '/',
             maxLength
@@ -2912,8 +2753,6 @@ var ThemedInput = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_react_css_th
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__utils_events__ = __webpack_require__(15);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__utils_utils__ = __webpack_require__(53);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__MenuItem__ = __webpack_require__(43);
-var _jsxFileName = '/Users/dalogon/Projects/12-technoactivity-projects/15-mymoid-styleguide/mymoid-style-guide/src/components/menu/Menu.js';
-
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
@@ -3168,19 +3007,9 @@ var factory = function factory(MenuItem) {
           {
             'data-mymoid': 'menu',
             className: className,
-            style: this.getRootStyle(),
-            __source: {
-              fileName: _jsxFileName,
-              lineNumber: 243
-            },
-            __self: this
+            style: this.getRootStyle()
           },
-          this.props.outline ? __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: theme.outline, style: outlineStyle, __source: {
-              fileName: _jsxFileName,
-              lineNumber: 249
-            },
-            __self: this
-          }) : null,
+          this.props.outline ? __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: theme.outline, style: outlineStyle }) : null,
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'ul',
             {
@@ -3188,12 +3017,7 @@ var factory = function factory(MenuItem) {
                 _this5.menuNode = node;
               },
               className: theme.menuInner,
-              style: this.getMenuStyle(),
-              __source: {
-                fileName: _jsxFileName,
-                lineNumber: 251
-              },
-              __self: this
+              style: this.getMenuStyle()
             },
             this.renderItems()
           )
@@ -3263,8 +3087,6 @@ var Menu = factory(__WEBPACK_IMPORTED_MODULE_8__MenuItem__["b" /* default */]);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_css_themr__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_css_themr___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_react_css_themr__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__identifiers__ = __webpack_require__(0);
-var _jsxFileName = '/Users/dalogon/Projects/12-technoactivity-projects/15-mymoid-styleguide/mymoid-style-guide/src/components/overlay/Overlay.js';
-
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
@@ -3375,12 +3197,7 @@ var Overlay = function (_Component) {
 
       return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', Object.assign({}, other, {
         onClick: this.handleClick,
-        className: __WEBPACK_IMPORTED_MODULE_2_classnames___default()(theme.overlay, _defineProperty({}, theme.active, active), className),
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 97
-        },
-        __self: this
+        className: __WEBPACK_IMPORTED_MODULE_2_classnames___default()(theme.overlay, _defineProperty({}, theme.active, active), className)
       }));
     }
   }]);
@@ -3426,8 +3243,6 @@ Overlay.defaultProps = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_css_themr___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_react_css_themr__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__identifiers__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__font_icon_FontIcon__ = __webpack_require__(7);
-var _jsxFileName = '/Users/dalogon/Projects/12-technoactivity-projects/15-mymoid-styleguide/mymoid-style-guide/src/components/table/TableCell.js';
-
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
@@ -3501,12 +3316,7 @@ var factory = function factory(FontIcon) {
         return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(tagName, props, [sorted && __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(FontIcon, {
           className: __WEBPACK_IMPORTED_MODULE_2_classnames___default()(theme.sortIcon, _defineProperty({}, theme.asc, sorted === ASC)),
           key: 'icon',
-          value: 'arrow_downward',
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 77
-          },
-          __self: this
+          value: 'arrow_downward'
         }), children]);
       }
     }]);
@@ -6323,9 +6133,6 @@ module.exports = g;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_classnames___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_classnames__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_style_proptype__ = __webpack_require__(58);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_style_proptype___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_react_style_proptype__);
-var _jsxFileName = '/Users/dalogon/Projects/12-technoactivity-projects/15-mymoid-styleguide/mymoid-style-guide/src/components/checkbox/Check.js',
-    _this = this;
-
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 
@@ -6346,12 +6153,7 @@ var factory = function factory(ripple) {
         'data-mymoid': 'check',
         className: __WEBPACK_IMPORTED_MODULE_2_classnames___default()(theme.check, _defineProperty({}, theme.checked, checked)),
         onMouseDown: onMouseDown,
-        style: style,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 8
-        },
-        __self: _this
+        style: style
       },
       children
     );
@@ -6417,9 +6219,6 @@ var ThemedCheckbox = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_react_css
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_css_themr___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_react_css_themr__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__identifiers__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__avatar_Avatar__ = __webpack_require__(16);
-var _jsxFileName = '/Users/dalogon/Projects/12-technoactivity-projects/15-mymoid-styleguide/mymoid-style-guide/src/components/chip/Chip.js',
-    _this = this;
-
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
@@ -6453,48 +6252,21 @@ var factory = function factory(Avatar) {
 
     return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
       'div',
-      Object.assign({ 'data-mymoid': 'chip', className: classes }, other, {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 34
-        },
-        __self: _this
-      }),
+      Object.assign({ 'data-mymoid': 'chip', className: classes }, other),
       typeof children === 'string' ? __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         'span',
-        {
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 35
-          },
-          __self: _this
-        },
+        null,
         children
       ) : children,
       deletable ? __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         'span',
-        { className: theme.delete, onClick: onDeleteClick, __source: {
-            fileName: _jsxFileName,
-            lineNumber: 37
-          },
-          __self: _this
-        },
+        { className: theme.delete, onClick: onDeleteClick },
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           'svg',
-          { viewBox: '0 0 40 40', className: theme.deleteIcon, __source: {
-              fileName: _jsxFileName,
-              lineNumber: 38
-            },
-            __self: _this
-          },
+          { viewBox: '0 0 40 40', className: theme.deleteIcon },
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('path', {
             className: theme.deleteX,
-            d: 'M 12,12 L 28,28 M 28,12 L 12,28',
-            __source: {
-              fileName: _jsxFileName,
-              lineNumber: 39
-            },
-            __self: _this
+            d: 'M 12,12 L 28,28 M 28,12 L 12,28'
           })
         )
       ) : null
@@ -6572,9 +6344,6 @@ var ThemedChip = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_react_css_the
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__hoc_Portal__ = __webpack_require__(38);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__identifiers__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__overlay_Overlay__ = __webpack_require__(24);
-var _jsxFileName = '/Users/dalogon/Projects/12-technoactivity-projects/15-mymoid-styleguide/mymoid-style-guide/src/components/drawer/Drawer.js',
-    _this = this;
-
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 
@@ -6601,12 +6370,7 @@ var factory = function factory(Overlay) {
 
     var content = __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
       'aside',
-      { 'data-mymoid': 'drawer', className: _className, __source: {
-          fileName: _jsxFileName,
-          lineNumber: 30
-        },
-        __self: _this
-      },
+      { 'data-mymoid': 'drawer', className: _className },
       children
     );
 
@@ -6615,12 +6379,7 @@ var factory = function factory(Overlay) {
       onClick: onOverlayClick,
       onEscKeyDown: onEscKeyDown,
       theme: theme,
-      themeNamespace: 'overlay',
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 39
-      },
-      __self: _this
+      themeNamespace: 'overlay'
     }), content);
   };
 
@@ -6693,8 +6452,6 @@ var ThemedDrawer = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_react_css_t
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react_dom__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react_dom___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_react_dom__);
-var _jsxFileName = '/Users/dalogon/Projects/12-technoactivity-projects/15-mymoid-styleguide/mymoid-style-guide/src/components/hoc/Portal.js';
-
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -6769,12 +6526,7 @@ var Portal = function (_Component) {
       if (!this.props.children) return null;
       return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         'div',
-        { className: this.props.className, __source: {
-            fileName: _jsxFileName,
-            lineNumber: 61
-          },
-          __self: this
-        },
+        { className: this.props.className },
         this.props.children
       );
     }
@@ -6860,9 +6612,6 @@ function getContainer(container) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_css_themr___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_react_css_themr__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__drawer_Drawer__ = __webpack_require__(36);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__identifiers__ = __webpack_require__(0);
-var _jsxFileName = '/Users/dalogon/Projects/12-technoactivity-projects/15-mymoid-styleguide/mymoid-style-guide/src/components/layout/NavDrawer.js',
-    _this = this;
-
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
@@ -6894,12 +6643,7 @@ var factory = function factory(Drawer) {
       insideTree: true,
       theme: theme,
       themeNamespace: 'navDrawer',
-      withOverlay: !pinned,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 27
-      },
-      __self: _this
+      withOverlay: !pinned
     }));
   };
 
@@ -7008,9 +6752,6 @@ var ThemedPanelTitle = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_react_c
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_css_themr___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_react_css_themr__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__identifiers__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__font_icon_FontIcon__ = __webpack_require__(7);
-var _jsxFileName = '/Users/dalogon/Projects/12-technoactivity-projects/15-mymoid-styleguide/mymoid-style-guide/src/components/link/Link.js',
-    _this = this;
-
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
@@ -7036,39 +6777,16 @@ var Link = function Link(_ref) {
 
   return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
     'a',
-    Object.assign({ 'data-mymoid': 'link', className: _className }, others, {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 27
-      },
-      __self: _this
-    }),
-    icon ? __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5__font_icon_FontIcon__["a" /* FontIcon */], { className: theme.icon, value: icon, iconsFamily: 'mymoicons', __source: {
-        fileName: _jsxFileName,
-        lineNumber: 29
-      },
-      __self: _this
-    }) : null,
+    Object.assign({ 'data-mymoid': 'link', className: _className }, others),
+    icon ? __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5__font_icon_FontIcon__["a" /* FontIcon */], { className: theme.icon, value: icon, iconsFamily: 'mymoicons' }) : null,
     label ? __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
       'abbr',
-      {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 31
-        },
-        __self: _this
-      },
+      null,
       label
     ) : null,
     count && parseInt(count, 10) !== 0 ? __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
       'small',
-      {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 32
-        },
-        __self: _this
-      },
+      null,
       count
     ) : null,
     children
@@ -7137,8 +6855,6 @@ var ThemedLink = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_react_css_the
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__identifiers__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__font_icon_FontIcon__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ripple_Ripple__ = __webpack_require__(9);
-var _jsxFileName = '/Users/dalogon/Projects/12-technoactivity-projects/15-mymoid-styleguide/mymoid-style-guide/src/components/menu/MenuItem.js';
-
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
@@ -7203,41 +6919,21 @@ var factory = function factory(ripple) {
           Object.assign({}, others, {
             'data-mymoid': 'menu-item',
             className: className,
-            onClick: this.handleClick,
-            __source: {
-              fileName: _jsxFileName,
-              lineNumber: 63
-            },
-            __self: this
+            onClick: this.handleClick
           }),
           icon ? __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5__font_icon_FontIcon__["a" /* FontIcon */], {
             value: icon,
             className: theme.icon,
-            iconsFamily: 'mymoicons',
-            __source: {
-              fileName: _jsxFileName,
-              lineNumber: 70
-            },
-            __self: this
+            iconsFamily: 'mymoicons'
           }) : null,
           typeof caption === 'string' ? __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'span',
-            { className: theme.caption, __source: {
-                fileName: _jsxFileName,
-                lineNumber: 78
-              },
-              __self: this
-            },
+            { className: theme.caption },
             caption
           ) : caption,
           shortcut ? __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'small',
-            { className: theme.shortcut, __source: {
-                fileName: _jsxFileName,
-                lineNumber: 84
-              },
-              __self: this
-            },
+            { className: theme.shortcut },
             shortcut
           ) : null,
           children
@@ -7315,9 +7011,6 @@ var ThemedOverlay = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_react_css_
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_classnames__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_classnames___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_classnames__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__activityIndicator__ = __webpack_require__(100);
-var _jsxFileName = '/Users/dalogon/Projects/12-technoactivity-projects/15-mymoid-styleguide/mymoid-style-guide/src/components/spinner/Dots.js',
-    _this = this;
-
 
 
 
@@ -7328,30 +7021,10 @@ var Dots = function Dots(props) {
 
   return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
     'div',
-    { style: props.style, __source: {
-        fileName: _jsxFileName,
-        lineNumber: 10
-      },
-      __self: _this
-    },
-    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: classes, style: props.getFillStyle(0.3), __source: {
-        fileName: _jsxFileName,
-        lineNumber: 11
-      },
-      __self: _this
-    }),
-    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: classes, style: props.getFillStyle(0.2), __source: {
-        fileName: _jsxFileName,
-        lineNumber: 12
-      },
-      __self: _this
-    }),
-    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: classes, style: props.getFillStyle(0.1), __source: {
-        fileName: _jsxFileName,
-        lineNumber: 13
-      },
-      __self: _this
-    })
+    { style: props.style },
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: classes, style: props.getFillStyle(0.3) }),
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: classes, style: props.getFillStyle(0.2) }),
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: classes, style: props.getFillStyle(0.1) })
   );
 };
 
@@ -7396,9 +7069,6 @@ var ThemedDots = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_react_css_the
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
-var _jsxFileName = '/Users/dalogon/Projects/12-technoactivity-projects/15-mymoid-styleguide/mymoid-style-guide/src/components/switch/Thumb.js',
-    _this = this;
-
 function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
 
 
@@ -7410,13 +7080,7 @@ var factory = function factory(ripple) {
         theme = _ref.theme,
         other = _objectWithoutProperties(_ref, ['onMouseDown', 'theme']);
 
-    return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('span', Object.assign({ className: theme.thumb, onMouseDown: onMouseDown }, other, {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 6
-      },
-      __self: _this
-    }));
+    return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('span', Object.assign({ className: theme.thumb, onMouseDown: onMouseDown }, other));
   };
 
   Thumb.propTypes = {
@@ -7449,8 +7113,6 @@ var factory = function factory(ripple) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__identifiers__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__checkbox_Checkbox__ = __webpack_require__(19);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__TableCell__ = __webpack_require__(25);
-var _jsxFileName = '/Users/dalogon/Projects/12-technoactivity-projects/15-mymoid-styleguide/mymoid-style-guide/src/components/table/TableHead.js';
-
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
@@ -7503,30 +7165,14 @@ var factory = function factory(Checkbox, TableCell) {
 
         return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           'tr',
-          Object.assign({}, other, {
-            __source: {
-              fileName: _jsxFileName,
-              lineNumber: 43
-            },
-            __self: this
-          }),
+          other,
           selectable && __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             TableCell,
-            { className: theme.checkboxCell, tagName: 'th', __source: {
-                fileName: _jsxFileName,
-                lineNumber: 45
-              },
-              __self: this
-            },
+            { className: theme.checkboxCell, tagName: 'th' },
             displaySelect && __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Checkbox, {
               checked: selected,
               disabled: !multiSelectable,
-              onChange: this.handleSelect,
-              __source: {
-                fileName: _jsxFileName,
-                lineNumber: 47
-              },
-              __self: this
+              onChange: this.handleSelect
             })
           ),
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.Children.map(children, function (child, index) {
@@ -7586,8 +7232,6 @@ var TableHead = factory(__WEBPACK_IMPORTED_MODULE_4__checkbox_Checkbox__["a" /* 
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__identifiers__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__checkbox_Checkbox__ = __webpack_require__(19);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__TableCell__ = __webpack_require__(25);
-var _jsxFileName = '/Users/dalogon/Projects/12-technoactivity-projects/15-mymoid-styleguide/mymoid-style-guide/src/components/table/TableRow.js';
-
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
@@ -7648,26 +7292,11 @@ var factory = function factory(Checkbox, TableCell) {
         var _className = __WEBPACK_IMPORTED_MODULE_2_classnames___default()(theme.row, _defineProperty({}, theme.selected, selectable && selected), className);
         return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           'tr',
-          Object.assign({}, other, { className: _className, __source: {
-              fileName: _jsxFileName,
-              lineNumber: 48
-            },
-            __self: this
-          }),
+          Object.assign({}, other, { className: _className }),
           selectable && __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             TableCell,
-            { className: theme.checkboxCell, __source: {
-                fileName: _jsxFileName,
-                lineNumber: 50
-              },
-              __self: this
-            },
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Checkbox, { checked: selected, onChange: this.handleSelect, __source: {
-                fileName: _jsxFileName,
-                lineNumber: 51
-              },
-              __self: this
-            })
+            { className: theme.checkboxCell },
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Checkbox, { checked: selected, onChange: this.handleSelect })
           ),
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.Children.map(children, function (child, index) {
             if (!child) return null;
@@ -7724,8 +7353,6 @@ var TableRow = factory(__WEBPACK_IMPORTED_MODULE_5__checkbox_Checkbox__["a" /* d
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__identifiers__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ripple_Ripple__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__font_icon_FontIcon__ = __webpack_require__(7);
-var _jsxFileName = '/Users/dalogon/Projects/12-technoactivity-projects/15-mymoid-styleguide/mymoid-style-guide/src/components/tabs/Tab.js';
-
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
@@ -7801,19 +7428,9 @@ var factory = function factory(ripple, FontIcon) {
           Object.assign({}, other, {
             'data-mymoid': 'tab',
             className: _className,
-            onClick: this.handleClick,
-            __source: {
-              fileName: _jsxFileName,
-              lineNumber: 82
-            },
-            __self: this
+            onClick: this.handleClick
           }),
-          icon && __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(FontIcon, { className: theme.icon, value: icon, __source: {
-              fileName: _jsxFileName,
-              lineNumber: 88
-            },
-            __self: this
-          }),
+          icon && __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(FontIcon, { className: theme.icon, value: icon }),
           label,
           children
         );
@@ -7876,8 +7493,6 @@ var Tab = factory(__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_5__ripple_Ripp
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_css_themr__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_css_themr___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_react_css_themr__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__identifiers__ = __webpack_require__(0);
-var _jsxFileName = '/Users/dalogon/Projects/12-technoactivity-projects/15-mymoid-styleguide/mymoid-style-guide/src/components/tabs/TabContent.js';
-
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
@@ -7910,12 +7525,7 @@ var TabContent = function (_Component) {
 
       return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         'section',
-        { className: className, tabIndex: this.props.tabIndex, __source: {
-            fileName: _jsxFileName,
-            lineNumber: 34
-          },
-          __self: this
-        },
+        { className: className, tabIndex: this.props.tabIndex },
         this.props.children
       );
     }
@@ -25380,8 +24990,6 @@ var unitlessKeys = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_css_themr___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_react_css_themr__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__identifiers__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__button_IconButton__ = __webpack_require__(18);
-var _jsxFileName = '/Users/dalogon/Projects/12-technoactivity-projects/15-mymoid-styleguide/mymoid-style-guide/src/components/app_bar/AppBar.js';
-
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
@@ -25483,12 +25091,7 @@ var factory = function factory(IconButton) {
 
         var renderedTitle = typeof title === 'string' ? __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           'h1',
-          { className: __WEBPACK_IMPORTED_MODULE_2_classnames___default()(theme.title), __source: {
-              fileName: _jsxFileName,
-              lineNumber: 108
-            },
-            __self: this
-          },
+          { className: __WEBPACK_IMPORTED_MODULE_2_classnames___default()(theme.title) },
           title
         ) : __WEBPACK_IMPORTED_MODULE_0_react___default.a.cloneElement(title, { className: __WEBPACK_IMPORTED_MODULE_2_classnames___default()(theme.title) });
 
@@ -25496,24 +25099,14 @@ var factory = function factory(IconButton) {
           inverse: true,
           className: __WEBPACK_IMPORTED_MODULE_2_classnames___default()(theme.leftIcon),
           onClick: onLeftIconClick,
-          icon: leftIcon,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 114
-          },
-          __self: this
+          icon: leftIcon
         });
 
         var renderedRightIcon = rightIcon && __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(IconButton, {
           inverse: true,
           className: __WEBPACK_IMPORTED_MODULE_2_classnames___default()(theme.rightIcon),
           onClick: onRightIconClick,
-          icon: rightIcon,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 123
-          },
-          __self: this
+          icon: rightIcon
         });
 
         return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -25523,21 +25116,11 @@ var factory = function factory(IconButton) {
             'data-mymoid': 'app-bar',
             ref: function ref(node) {
               _this2.rootNode = node;
-            },
-            __source: {
-              fileName: _jsxFileName,
-              lineNumber: 132
-            },
-            __self: this
+            }
           },
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'div',
-            { className: theme.inner, __source: {
-                fileName: _jsxFileName,
-                lineNumber: 139
-              },
-              __self: this
-            },
+            { className: theme.inner },
             renderedLeftIcon,
             renderedTitle,
             children,
@@ -25631,9 +25214,6 @@ var ProductionThemedAppBar = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_r
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_styled_components__ = __webpack_require__(30);
-var _jsxFileName = '/Users/dalogon/Projects/12-technoactivity-projects/15-mymoid-styleguide/mymoid-style-guide/src/components/attached_label/index.js',
-    _this = this;
-
 var _templateObject = _taggedTemplateLiteral(['\n  width: 100%;\n  background-color: #fa9d00;\n  border-top: 2px solid #fa9d00;\n'], ['\n  width: 100%;\n  background-color: #fa9d00;\n  border-top: 2px solid #fa9d00;\n']),
     _templateObject2 = _taggedTemplateLiteral(['\n  text-align: center;\n'], ['\n  text-align: center;\n']),
     _templateObject3 = _taggedTemplateLiteral(['\n  background-color: #fa9d00;\n  font-family: Lato;\n  font-size: 12px;\n  line-height: 22px;\n  font-weight: 300;\n  padding: 3px 5px 5px 5px;\n  ', '\n  ', '\n  ', '\n  ', '\n'], ['\n  background-color: #fa9d00;\n  font-family: Lato;\n  font-size: 12px;\n  line-height: 22px;\n  font-weight: 300;\n  padding: 3px 5px 5px 5px;\n  ', '\n  ', '\n  ', '\n  ', '\n']);
@@ -25649,47 +25229,18 @@ var AttachedLabel = function AttachedLabel(_ref) {
       children = _ref.children;
   return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
     'div',
-    {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 6
-      },
-      __self: _this
-    },
-    above ? __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(AttachedLabelBorder, {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 7
-      },
-      __self: _this
-    }) : null,
+    null,
+    above ? __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(AttachedLabelBorder, null) : null,
     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
       AttachedLabelTextContainer,
-      {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 8
-        },
-        __self: _this
-      },
+      null,
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         Label,
-        { above: above, __source: {
-            fileName: _jsxFileName,
-            lineNumber: 9
-          },
-          __self: _this
-        },
+        { above: above },
         children
       )
     ),
-    !above ? __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(AttachedLabelBorder, {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 11
-      },
-      __self: _this
-    }) : null
+    !above ? __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(AttachedLabelBorder, null) : null
   );
 };
 
@@ -25735,8 +25286,6 @@ var Label = __WEBPACK_IMPORTED_MODULE_2_styled_components__["a" /* default */].s
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__chip_Chip_js__ = __webpack_require__(34);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__input_Input_js__ = __webpack_require__(21);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__utils_events_js__ = __webpack_require__(15);
-var _jsxFileName = '/Users/dalogon/Projects/12-technoactivity-projects/15-mymoid-styleguide/mymoid-style-guide/src/components/autocomplete/Autocomplete.js';
-
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
@@ -26159,12 +25708,7 @@ var factory = function factory(Chip, Input) {
                 key: key,
                 className: _this2.props.theme.value,
                 deletable: true,
-                onDeleteClick: _this2.unselect.bind(_this2, key),
-                __source: {
-                  fileName: _jsxFileName,
-                  lineNumber: 374
-                },
-                __self: _this2
+                onDeleteClick: _this2.unselect.bind(_this2, key)
               },
               value
             );
@@ -26172,12 +25716,7 @@ var factory = function factory(Chip, Input) {
 
           return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'ul',
-            { className: this.props.theme.values, __source: {
-                fileName: _jsxFileName,
-                lineNumber: 384
-              },
-              __self: this
-            },
+            { className: this.props.theme.values },
             selectedItems
           );
         }
@@ -26202,12 +25741,7 @@ var factory = function factory(Chip, Input) {
               key: key,
               className: className,
               onMouseDown: _this3.handleMouseDown,
-              onMouseOver: _this3.handleSuggestionHover,
-              __source: {
-                fileName: _jsxFileName,
-                lineNumber: 395
-              },
-              __self: _this3
+              onMouseOver: _this3.handleSuggestionHover
             },
             value
           );
@@ -26219,12 +25753,7 @@ var factory = function factory(Chip, Input) {
             className: __WEBPACK_IMPORTED_MODULE_3_classnames___default()(theme.suggestions, _defineProperty({}, theme.up, this.state.direction === 'up')),
             ref: function ref(node) {
               _this3.suggestionsNode = node;
-            },
-            __source: {
-              fileName: _jsxFileName,
-              lineNumber: 408
-            },
-            __self: this
+            }
           },
           suggestions
         );
@@ -26253,12 +25782,7 @@ var factory = function factory(Chip, Input) {
 
         return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           'div',
-          { 'data-mymoid': 'autocomplete', className: className, __source: {
-              fileName: _jsxFileName,
-              lineNumber: 446
-            },
-            __self: this
-          },
+          { 'data-mymoid': 'autocomplete', className: className },
           this.props.selectedPosition === 'above' ? this.renderSelected() : null,
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Input, Object.assign({}, other, {
             ref: function ref(node) {
@@ -26275,12 +25799,7 @@ var factory = function factory(Chip, Input) {
             onKeyUp: this.handleQueryKeyUp,
             theme: theme,
             themeNamespace: 'input',
-            value: this.state.query,
-            __source: {
-              fileName: _jsxFileName,
-              lineNumber: 450
-            },
-            __self: this
+            value: this.state.query
           })),
           this.renderSuggestions(),
           this.props.selectedPosition === 'below' ? this.renderSelected() : null
@@ -26390,8 +25909,6 @@ var ThemedAutocomplete = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_react
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__identifiers__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__font_icon_FontIcon__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ripple_Ripple__ = __webpack_require__(9);
-var _jsxFileName = '/Users/dalogon/Projects/12-technoactivity-projects/15-mymoid-styleguide/mymoid-style-guide/src/components/button/BrowseButton.js';
-
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
@@ -26485,30 +26002,14 @@ var factory = function factory(ripple, FontIcon) {
           'data-mymoid': 'label'
         });
 
-        return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(element, props, icon ? __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(FontIcon, { className: theme.icon, value: icon, __source: {
-            fileName: _jsxFileName,
-            lineNumber: 129
-          },
-          __self: this
-        }) : null, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(element, props, icon ? __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(FontIcon, { className: theme.icon, value: icon }) : null, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           'span',
-          {
-            __source: {
-              fileName: _jsxFileName,
-              lineNumber: 130
-            },
-            __self: this
-          },
+          null,
           label
         ), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', {
           className: classes,
           type: 'file',
-          onChange: this.handleFileChange,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 131
-          },
-          __self: this
+          onChange: this.handleFileChange
         }), children);
       }
     }]);
@@ -26581,9 +26082,6 @@ var BrowseButton = factory(__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_6__ri
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__StyledInput__ = __webpack_require__(71);
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _jsxFileName = '/Users/dalogon/Projects/12-technoactivity-projects/15-mymoid-styleguide/mymoid-style-guide/src/components/confirm_submit/ConfirmSubmit.js',
-    _this = this;
-
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
@@ -26599,13 +26097,7 @@ var ConfirmSubmitContext = __WEBPACK_IMPORTED_MODULE_0_react___default.a.createC
 var ConfirmSubmitConsumer = function ConfirmSubmitConsumer(props) {
   return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
     ConfirmSubmitContext.Consumer,
-    Object.assign({}, props, {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 8
-      },
-      __self: _this
-    }),
+    props,
     function (context) {
       if (!context) {
         throw new Error('ConfirmSubmit compound components cannot be renderer outside the ConfirmSubmit component');
@@ -26622,7 +26114,7 @@ var ConfirmSubmit = function (_React$Component) {
   function ConfirmSubmit() {
     var _ref;
 
-    var _temp, _this2, _ret;
+    var _temp, _this, _ret;
 
     _classCallCheck(this, ConfirmSubmit);
 
@@ -26630,15 +26122,15 @@ var ConfirmSubmit = function (_React$Component) {
       args[_key] = arguments[_key];
     }
 
-    return _ret = (_temp = (_this2 = _possibleConstructorReturn(this, (_ref = ConfirmSubmit.__proto__ || Object.getPrototypeOf(ConfirmSubmit)).call.apply(_ref, [this].concat(args))), _this2), _this2.state = { confirm: false, submit: _this2.submit }, _this2.submit = function () {
-      return _this2.setState(function (_ref2) {
+    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = ConfirmSubmit.__proto__ || Object.getPrototypeOf(ConfirmSubmit)).call.apply(_ref, [this].concat(args))), _this), _this.state = { confirm: false, submit: _this.submit }, _this.submit = function () {
+      return _this.setState(function (_ref2) {
         var confirm = _ref2.confirm;
-        return { confirm: confirm === _this2.props.confirmPhrase };
+        return { confirm: confirm === _this.props.confirmPhrase };
       }, function () {
-        return _this2.props.onSubmit(_this2.state.confirm);
+        return _this.props.onSubmit(_this.state.confirm);
       } // eslint-disable-line
       );
-    }, _temp), _possibleConstructorReturn(_this2, _ret);
+    }, _temp), _possibleConstructorReturn(_this, _ret);
   }
 
   _createClass(ConfirmSubmit, [{
@@ -26646,12 +26138,7 @@ var ConfirmSubmit = function (_React$Component) {
     value: function render() {
       return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         ConfirmSubmitContext.Provider,
-        { value: this.state, __source: {
-            fileName: _jsxFileName,
-            lineNumber: 46
-          },
-          __self: this
-        },
+        { value: this.state },
         this.props.children
       );
     }
@@ -26664,13 +26151,7 @@ ConfirmSubmit.Description = function (_ref3) {
   var children = _ref3.children;
   return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
     ConfirmSubmitContext.Consumer,
-    {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 23
-      },
-      __self: _this
-    },
+    null,
     children
   );
 };
@@ -26679,13 +26160,7 @@ ConfirmSubmit.ConfirmPhrase = function (_ref4) {
   var children = _ref4.children;
   return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
     ConfirmSubmitContext.Consumer,
-    {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 26
-      },
-      __self: _this
-    },
+    null,
     children
   );
 };
@@ -26693,22 +26168,10 @@ ConfirmSubmit.ConfirmPhrase = function (_ref4) {
 ConfirmSubmit.Input = function (props) {
   return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
     ConfirmSubmitConsumer,
-    {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 29
-      },
-      __self: _this
-    },
+    null,
     function (_ref5) {
       var submit = _ref5.submit;
-      return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__StyledInput__["a" /* default */], Object.assign({ onChange: submit }, props, {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 30
-        },
-        __self: _this
-      }));
+      return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__StyledInput__["a" /* default */], Object.assign({ onChange: submit }, props));
     }
   );
 };
@@ -26770,9 +26233,6 @@ var StyledInput = __WEBPACK_IMPORTED_MODULE_0_styled_components__["a" /* default
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__hoc_ActivableRenderer__ = __webpack_require__(79);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__button_Button__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__overlay_Overlay__ = __webpack_require__(24);
-var _jsxFileName = '/Users/dalogon/Projects/12-technoactivity-projects/15-mymoid-styleguide/mymoid-style-guide/src/components/dialog/Dialog.js',
-    _this = this;
-
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 /* eslint-disable jsx-a11y/aria-role */
@@ -26801,12 +26261,7 @@ var factory = function factory(Overlay, Button) {
           marginRight: '5px'
         }
       }, action, {
-        className: className,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 19
-        },
-        __self: _this
+        className: className
       })) // eslint-disable-line
       : __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Button, Object.assign({
         primary: true,
@@ -26817,12 +26272,7 @@ var factory = function factory(Overlay, Button) {
           height: '51px'
         }
       }, action, {
-        className: className,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 33
-        },
-        __self: _this
+        className: className
       })); // eslint-disable-line
     });
 
@@ -26830,12 +26280,7 @@ var factory = function factory(Overlay, Button) {
 
     return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
       __WEBPACK_IMPORTED_MODULE_5__hoc_Portal__["a" /* default */],
-      { className: props.theme.wrapper, __source: {
-          fileName: _jsxFileName,
-          lineNumber: 56
-        },
-        __self: _this
-      },
+      { className: props.theme.wrapper },
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Overlay, {
         active: props.active,
         className: props.theme.overlay,
@@ -26845,57 +26290,27 @@ var factory = function factory(Overlay, Button) {
         onMouseMove: props.onOverlayMouseMove,
         onMouseUp: props.onOverlayMouseUp,
         theme: props.theme,
-        themeNamespace: 'overlay',
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 57
-        },
-        __self: _this
+        themeNamespace: 'overlay'
       }),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         'div',
-        { 'data-mymoid': 'dialog', className: className, __source: {
-            fileName: _jsxFileName,
-            lineNumber: 68
-          },
-          __self: _this
-        },
+        { 'data-mymoid': 'dialog', className: className },
         props.isAnAlert ? __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', {
-          className: __WEBPACK_IMPORTED_MODULE_3_classnames___default()(_defineProperty({}, props.theme.isAnAlert, props.isAnAlert)),
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 70
-          },
-          __self: _this
+          className: __WEBPACK_IMPORTED_MODULE_3_classnames___default()(_defineProperty({}, props.theme.isAnAlert, props.isAnAlert))
         }) : null,
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           'section',
-          { role: 'body', className: props.theme.body, __source: {
-              fileName: _jsxFileName,
-              lineNumber: 76
-            },
-            __self: _this
-          },
+          { role: 'body', className: props.theme.body },
           props.title ? __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'h6',
-            { className: props.theme.title, __source: {
-                fileName: _jsxFileName,
-                lineNumber: 78
-              },
-              __self: _this
-            },
+            { className: props.theme.title },
             props.title
           ) : null,
           props.children
         ),
         actions.length ? __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           'nav',
-          { role: 'navigation', className: props.theme.navigation, __source: {
-              fileName: _jsxFileName,
-              lineNumber: 83
-            },
-            __self: _this
-          },
+          { role: 'navigation', className: props.theme.navigation },
           actions
         ) : null
       )
@@ -26995,8 +26410,6 @@ var ThemedDialog = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_react_css_t
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__identifiers__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__input_Input__ = __webpack_require__(21);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__utils_events__ = __webpack_require__(15);
-var _jsxFileName = '/Users/dalogon/Projects/12-technoactivity-projects/15-mymoid-styleguide/mymoid-style-guide/src/components/dropdown/Dropdown.js';
-
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
@@ -27024,8 +26437,7 @@ var factory = function factory(Input) {
     _inherits(Dropdown, _Component);
 
     function Dropdown() {
-      var _ref,
-          _this2 = this;
+      var _ref;
 
       var _temp, _this, _ret;
 
@@ -27118,12 +26530,7 @@ var factory = function factory(Input) {
           {
             key: idx,
             className: className,
-            onMouseDown: !item.disabled && _this.handleSelect.bind(_this, item[valueKey]),
-            __source: {
-              fileName: _jsxFileName,
-              lineNumber: 184
-            },
-            __self: _this2
+            onMouseDown: !item.disabled && _this.handleSelect.bind(_this, item[valueKey])
           },
           _this.props.template ? _this.props.template(item) : item[labelKey]
         );
@@ -27162,50 +26569,25 @@ var factory = function factory(Input) {
 
         return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           'div',
-          { className: className, onClick: this.handleClick, __source: {
-              fileName: _jsxFileName,
-              lineNumber: 158
-            },
-            __self: this
-          },
+          { className: className, onClick: this.handleClick },
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'div',
-            { className: theme.templateValue + ' ' + theme.value, __source: {
-                fileName: _jsxFileName,
-                lineNumber: 159
-              },
-              __self: this
-            },
+            { className: theme.templateValue + ' ' + theme.value },
             this.props.template(selected)
           ),
           this.props.label ? __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'label',
-            { className: theme.label, __source: {
-                fileName: _jsxFileName,
-                lineNumber: 163
-              },
-              __self: this
-            },
+            { className: theme.label },
             this.props.label,
             this.props.required ? __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
               'span',
-              { className: theme.required, __source: {
-                  fileName: _jsxFileName,
-                  lineNumber: 166
-                },
-                __self: this
-              },
+              { className: theme.required },
               ' * '
             ) : null
           ) : null,
           this.props.error ? __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'span',
-            { className: theme.error, __source: {
-                fileName: _jsxFileName,
-                lineNumber: 171
-              },
-              __self: this
-            },
+            { className: theme.error },
             this.props.error
           ) : null
         );
@@ -27214,7 +26596,7 @@ var factory = function factory(Input) {
       key: 'render',
       value: function render() {
         var _classnames3,
-            _this3 = this;
+            _this2 = this;
 
         var _props = this.props,
             allowBlank = _props.allowBlank,
@@ -27239,12 +26621,7 @@ var factory = function factory(Input) {
             className: className,
             'data-mymoid': 'dropdown',
             onBlur: this.handleBlur,
-            onFocus: this.handleFocus,
-            __source: {
-              fileName: _jsxFileName,
-              lineNumber: 224
-            },
-            __self: this
+            onFocus: this.handleFocus
           },
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Input, Object.assign({}, others, {
             tabIndex: '0',
@@ -27253,27 +26630,17 @@ var factory = function factory(Input) {
             required: this.props.required,
             readOnly: true,
             ref: function ref(node) {
-              _this3.inputNode = node && node.getWrappedInstance();
+              _this2.inputNode = node && node.getWrappedInstance();
             },
             type: template && selected ? 'hidden' : null,
             theme: theme,
             themeNamespace: 'input',
-            value: selected && selected[labelKey] ? selected[labelKey] : '',
-            __source: {
-              fileName: _jsxFileName,
-              lineNumber: 230
-            },
-            __self: this
+            value: selected && selected[labelKey] ? selected[labelKey] : ''
           })),
           template && selected ? this.renderTemplateValue(selected) : null,
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'ul',
-            { className: theme.values, __source: {
-                fileName: _jsxFileName,
-                lineNumber: 246
-              },
-              __self: this
-            },
+            { className: theme.values },
             source.map(this.renderValue)
           )
         );
@@ -27373,9 +26740,6 @@ var ThemedDropdown = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_react_css
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_classnames__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_classnames___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_classnames__);
-var _jsxFileName = '/Users/dalogon/Projects/12-technoactivity-projects/15-mymoid-styleguide/mymoid-style-guide/src/components/error/Error.js',
-    _this = this;
-
 
 
 
@@ -27389,12 +26753,7 @@ var Error = function Error(_ref) {
   var errorClassName = __WEBPACK_IMPORTED_MODULE_2_classnames___default()(theme.error, className);
   return errorMessage ? __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
     'div',
-    { className: errorClassName, __source: {
-        fileName: _jsxFileName,
-        lineNumber: 8
-      },
-      __self: _this
-    },
+    { className: errorClassName },
     errorMessage
   ) : null;
 };
@@ -27438,8 +26797,6 @@ var ThemedError = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_react_css_th
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
-var _jsxFileName = '/Users/dalogon/Projects/12-technoactivity-projects/15-mymoid-styleguide/mymoid-style-guide/src/components/hoc/ActivableRenderer.js';
-
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
@@ -27526,12 +26883,7 @@ var ActivableRendererFactory = function ActivableRendererFactory() {
               active = _state.active,
               rendered = _state.rendered;
 
-          return rendered ? __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(ActivableComponent, Object.assign({}, others, { active: active, __source: {
-              fileName: _jsxFileName,
-              lineNumber: 56
-            },
-            __self: this
-          })) : null;
+          return rendered ? __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(ActivableComponent, Object.assign({}, others, { active: active })) : null;
         }
       }]);
 
@@ -27673,9 +27025,6 @@ var ActivableRendererFactory = function ActivableRendererFactory() {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_css_themr__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_css_themr___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_react_css_themr__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__identifiers__ = __webpack_require__(0);
-var _jsxFileName = '/Users/dalogon/Projects/12-technoactivity-projects/15-mymoid-styleguide/mymoid-style-guide/src/components/layout/FloatingCenteredPanel.js',
-    _this = this;
-
 function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
 
 
@@ -27695,12 +27044,7 @@ var FloatingCenteredPanel = function FloatingCenteredPanel(_ref) {
     'div',
     Object.assign({}, other, {
       'data-mymoid': 'panel-floating-centered',
-      className: _className,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 10
-      },
-      __self: _this
+      className: _className
     }),
     children
   );
@@ -27733,9 +27077,6 @@ FloatingCenteredPanel.defaultProps = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__index__ = __webpack_require__(40);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__GradientLayout_css__ = __webpack_require__(181);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__GradientLayout_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__GradientLayout_css__);
-var _jsxFileName = '/Users/dalogon/Projects/12-technoactivity-projects/15-mymoid-styleguide/mymoid-style-guide/src/components/layout/GradientLayout.js',
-    _this = this;
-
 
 
 
@@ -27746,13 +27087,7 @@ var GradientLayout = function GradientLayout(props) {
 
   return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
     __WEBPACK_IMPORTED_MODULE_2__index__["c" /* Layout */],
-    Object.assign({ theme: __WEBPACK_IMPORTED_MODULE_3__GradientLayout_css___default.a }, props, {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 9
-      },
-      __self: _this
-    }),
+    Object.assign({ theme: __WEBPACK_IMPORTED_MODULE_3__GradientLayout_css___default.a }, props),
     children
   );
 };
@@ -27785,8 +27120,6 @@ GradientLayout.propTypes = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__utils_isComponentOfType__ = __webpack_require__(26);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__utils_filterReactChildren__ = __webpack_require__(52);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__utils_breakpoints__ = __webpack_require__(112);
-var _jsxFileName = '/Users/dalogon/Projects/12-technoactivity-projects/15-mymoid-styleguide/mymoid-style-guide/src/components/layout/Layout.js';
-
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
@@ -27886,12 +27219,7 @@ var factory = function factory(NavDrawer) {
 
         return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           'div',
-          Object.assign({}, rest, { className: _className, __source: {
-              fileName: _jsxFileName,
-              lineNumber: 82
-            },
-            __self: this
-          }),
+          Object.assign({}, rest, { className: _className }),
           clonedLeftSideNav,
           unknown
         );
@@ -27938,9 +27266,6 @@ var Layout = factory(__WEBPACK_IMPORTED_MODULE_7__NavDrawer__["b" /* default */]
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_css_themr__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_css_themr___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_react_css_themr__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__identifiers__ = __webpack_require__(0);
-var _jsxFileName = '/Users/dalogon/Projects/12-technoactivity-projects/15-mymoid-styleguide/mymoid-style-guide/src/components/layout/Panel.js',
-    _this = this;
-
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
@@ -27961,12 +27286,7 @@ var Panel = function Panel(_ref) {
   var _className = __WEBPACK_IMPORTED_MODULE_2_classnames___default()(theme.panel, _defineProperty({}, theme.bodyScroll, bodyScroll), className);
   return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
     'div',
-    Object.assign({}, other, { 'data-mymoid': 'panel', className: _className, __source: {
-        fileName: _jsxFileName,
-        lineNumber: 14
-      },
-      __self: _this
-    }),
+    Object.assign({}, other, { 'data-mymoid': 'panel', className: _className }),
     children
   );
 };
@@ -28003,9 +27323,6 @@ Panel.defaultProps = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_classnames__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_classnames___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_classnames__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__identifiers__ = __webpack_require__(0);
-var _jsxFileName = '/Users/dalogon/Projects/12-technoactivity-projects/15-mymoid-styleguide/mymoid-style-guide/src/components/layout/PanelActions.js',
-    _this = this;
-
 function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
 
 
@@ -28022,13 +27339,7 @@ var PanelActions = function PanelActions(_ref) {
 
   return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
     'div',
-    Object.assign({ className: __WEBPACK_IMPORTED_MODULE_3_classnames___default()(theme.panelActions, className) }, other, {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 8
-      },
-      __self: _this
-    }),
+    Object.assign({ className: __WEBPACK_IMPORTED_MODULE_3_classnames___default()(theme.panelActions, className) }, other),
     children
   );
 };
@@ -28059,9 +27370,6 @@ PanelActions.propTypes = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_css_themr__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_css_themr___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_react_css_themr__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__identifiers__ = __webpack_require__(0);
-var _jsxFileName = '/Users/dalogon/Projects/12-technoactivity-projects/15-mymoid-styleguide/mymoid-style-guide/src/components/layout/PanelContent.js',
-    _this = this;
-
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
@@ -28084,12 +27392,7 @@ var PanelContent = function PanelContent(_ref) {
     'div',
     Object.assign({}, other, {
       'data-mymoid': 'panel-floating-centered',
-      className: _className,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 14
-      },
-      __self: _this
+      className: _className
     }),
     children
   );
@@ -28127,9 +27430,6 @@ PanelContent.defaultProps = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_classnames__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_classnames___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_classnames__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__identifiers__ = __webpack_require__(0);
-var _jsxFileName = '/Users/dalogon/Projects/12-technoactivity-projects/15-mymoid-styleguide/mymoid-style-guide/src/components/layout/PanelTitle.js',
-    _this = this;
-
 function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
 
 
@@ -28146,13 +27446,7 @@ var PanelTitle = function PanelTitle(_ref) {
 
   return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
     'div',
-    Object.assign({ className: __WEBPACK_IMPORTED_MODULE_3_classnames___default()(theme.panelTitle, className) }, other, {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 8
-      },
-      __self: _this
-    }),
+    Object.assign({ className: __WEBPACK_IMPORTED_MODULE_3_classnames___default()(theme.panelTitle, className) }, other),
     children
   );
 };
@@ -28183,9 +27477,6 @@ PanelTitle.propTypes = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_classnames__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_classnames___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_classnames__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__identifiers__ = __webpack_require__(0);
-var _jsxFileName = '/Users/dalogon/Projects/12-technoactivity-projects/15-mymoid-styleguide/mymoid-style-guide/src/components/media/Media.js',
-    _this = this;
-
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
@@ -28217,21 +27508,10 @@ var Media = function Media(_ref) {
 
   return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
     'div',
-    Object.assign({ style: bgStyle, className: classes }, other, {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 35
-      },
-      __self: _this
-    }),
+    Object.assign({ style: bgStyle, className: classes }, other),
     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
       'div',
-      { className: innerClasses, __source: {
-          fileName: _jsxFileName,
-          lineNumber: 36
-        },
-        __self: _this
-      },
+      { className: innerClasses },
       children
     )
   );
@@ -28296,8 +27576,6 @@ var ThemedMedia = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_react_css_th
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__identifiers__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__button_IconButton__ = __webpack_require__(18);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__Menu__ = __webpack_require__(23);
-var _jsxFileName = '/Users/dalogon/Projects/12-technoactivity-projects/15-mymoid-styleguide/mymoid-style-guide/src/components/menu/IconMenu.js';
-
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
@@ -28363,23 +27641,13 @@ var factory = function factory(IconButton, Menu) {
 
         return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           'div',
-          Object.assign({}, other, { className: __WEBPACK_IMPORTED_MODULE_2_classnames___default()(theme.iconMenu, className), __source: {
-              fileName: _jsxFileName,
-              lineNumber: 71
-            },
-            __self: this
-          }),
+          Object.assign({}, other, { className: __WEBPACK_IMPORTED_MODULE_2_classnames___default()(theme.iconMenu, className) }),
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(IconButton, {
             className: theme.icon,
             icon: icon,
             inverse: inverse,
             onClick: this.handleButtonClick,
-            ripple: iconRipple,
-            __source: {
-              fileName: _jsxFileName,
-              lineNumber: 72
-            },
-            __self: this
+            ripple: iconRipple
           }),
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             Menu,
@@ -28392,12 +27660,7 @@ var factory = function factory(IconButton, Menu) {
               ripple: menuRipple,
               selectable: selectable,
               selected: selected,
-              theme: theme,
-              __source: {
-                fileName: _jsxFileName,
-                lineNumber: 79
-              },
-              __self: this
+              theme: theme
             },
             children
           )
@@ -28457,9 +27720,6 @@ var IconMenu = factory(__WEBPACK_IMPORTED_MODULE_5__button_IconButton__["b" /* d
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react_css_themr__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react_css_themr___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_react_css_themr__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__identifiers__ = __webpack_require__(0);
-var _jsxFileName = '/Users/dalogon/Projects/12-technoactivity-projects/15-mymoid-styleguide/mymoid-style-guide/src/components/menu/MenuDivider.js',
-    _this = this;
-
 
 
 
@@ -28467,12 +27727,7 @@ var _jsxFileName = '/Users/dalogon/Projects/12-technoactivity-projects/15-mymoid
 
 var MenuDivider = function MenuDivider(_ref) {
   var theme = _ref.theme;
-  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('hr', { 'data-mymoid': 'menu-divider', className: theme.menuDivider, __source: {
-      fileName: _jsxFileName,
-      lineNumber: 7
-    },
-    __self: _this
-  });
+  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('hr', { 'data-mymoid': 'menu-divider', className: theme.menuDivider });
 };
 
 MenuDivider.propTypes = {
@@ -28502,8 +27757,6 @@ MenuDivider.propTypes = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__identifiers__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__button_Button__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__Menu__ = __webpack_require__(23);
-var _jsxFileName = '/Users/dalogon/Projects/12-technoactivity-projects/15-mymoid-styleguide/mymoid-style-guide/src/components/menu/PopoverMenu.js';
-
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
@@ -28574,24 +27827,14 @@ var factory = function factory(Button, Menu) {
         return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           'div',
           Object.assign({}, other, {
-            className: __WEBPACK_IMPORTED_MODULE_2_classnames___default()(theme.iconMenu, _defineProperty({}, theme.active, active), className),
-            __source: {
-              fileName: _jsxFileName,
-              lineNumber: 72
-            },
-            __self: this
+            className: __WEBPACK_IMPORTED_MODULE_2_classnames___default()(theme.iconMenu, _defineProperty({}, theme.active, active), className)
           }),
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Button, {
             className: theme.icon,
             icon: icon,
             inverse: inverse,
             onClick: this.handleButtonClick,
-            ripple: iconRipple,
-            __source: {
-              fileName: _jsxFileName,
-              lineNumber: 82
-            },
-            __self: this
+            ripple: iconRipple
           }),
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             Menu,
@@ -28604,12 +27847,7 @@ var factory = function factory(Button, Menu) {
               ripple: menuRipple,
               selectable: selectable,
               selected: selected,
-              theme: theme,
-              __source: {
-                fileName: _jsxFileName,
-                lineNumber: 89
-              },
-              __self: this
+              theme: theme
             },
             children
           )
@@ -28673,9 +27911,6 @@ var PopoverMenu = factory(__WEBPACK_IMPORTED_MODULE_5__button_Button__["a" /* de
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_css_themr___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_react_css_themr__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__identifiers__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__avatar_Avatar__ = __webpack_require__(16);
-var _jsxFileName = '/Users/dalogon/Projects/12-technoactivity-projects/15-mymoid-styleguide/mymoid-style-guide/src/components/menu/ProfileTitle.js',
-    _this = this;
-
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
@@ -28708,36 +27943,14 @@ var factory = function factory(Avatar) {
     var subTitleClasses = __WEBPACK_IMPORTED_MODULE_2_classnames___default()(theme.subtitle, _defineProperty({}, theme.active, active));
     return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
       'div',
-      Object.assign({ className: classes }, other, {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 37
-        },
-        __self: _this
-      }),
-      typeof avatar === 'string' ? __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Avatar, { title: title, theme: theme, __source: {
-          fileName: _jsxFileName,
-          lineNumber: 39
-        },
-        __self: _this
-      }) : avatar,
+      Object.assign({ className: classes }, other),
+      typeof avatar === 'string' ? __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Avatar, { title: title, theme: theme }) : avatar,
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         'div',
-        {
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 43
-          },
-          __self: _this
-        },
+        null,
         children && typeof children === 'string' && __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           'h5',
-          { className: theme.title, __source: {
-              fileName: _jsxFileName,
-              lineNumber: 46
-            },
-            __self: _this
-          },
+          { className: theme.title },
           children
         ),
         children && typeof children !== 'string' && children
@@ -28848,9 +28061,6 @@ var ThemedProductionProfileTitle = __webpack_require__.i(__WEBPACK_IMPORTED_MODU
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__identifiers__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__button_Button__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__link_Link__ = __webpack_require__(41);
-var _jsxFileName = '/Users/dalogon/Projects/12-technoactivity-projects/15-mymoid-styleguide/mymoid-style-guide/src/components/navigation/Navigation.js',
-    _this = this;
-
 
 
 
@@ -28870,35 +28080,18 @@ var factory = function factory(Button, Link) {
 
     var _className = __WEBPACK_IMPORTED_MODULE_2_classnames___default()(theme[type], className);
     var buttons = actions.map(function (action, index) {
-      return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Button, Object.assign({ className: theme.button, key: index }, action, {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 20
-        },
-        __self: _this
-      })) // eslint-disable-line
+      return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Button, Object.assign({ className: theme.button, key: index }, action)) // eslint-disable-line
       ;
     });
 
     var links = routes.map(function (route, index) {
-      return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Link, Object.assign({ className: theme.link, key: index }, route, {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 24
-        },
-        __self: _this
-      })) // eslint-disable-line
+      return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Link, Object.assign({ className: theme.link, key: index }, route)) // eslint-disable-line
       ;
     });
 
     return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
       'nav',
-      { 'data-mymoid': 'navigation', className: _className, __source: {
-          fileName: _jsxFileName,
-          lineNumber: 28
-        },
-        __self: _this
-      },
+      { 'data-mymoid': 'navigation', className: _className },
       links,
       buttons,
       children
@@ -28969,9 +28162,6 @@ var ThemedNavigation = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_react_c
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_styled_components__ = __webpack_require__(30);
-var _jsxFileName = '/Users/dalogon/Projects/12-technoactivity-projects/15-mymoid-styleguide/mymoid-style-guide/src/components/notification/index.js',
-    _this = this;
-
 var _templateObject = _taggedTemplateLiteral(['\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  position: fixed;\n  bottom: 0;\n  ', ';\n  ', ';\n  right: 50%;\n  min-width: 200px;\n  height: 50px;\n  font-family: Lato;\n  font-weight: 300;\n  font-size: 16px;\n  color: #fff;\n  border-radius: 3px;\n  text-align: center;\n  transform: translateY(100%);\n  opacity: 0;\n  transition: all ease-in-out 0.3s;\n  padding: 0 10px;\n  ', ';\n  ', ';\n'], ['\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  position: fixed;\n  bottom: 0;\n  ', ';\n  ', ';\n  right: 50%;\n  min-width: 200px;\n  height: 50px;\n  font-family: Lato;\n  font-weight: 300;\n  font-size: 16px;\n  color: #fff;\n  border-radius: 3px;\n  text-align: center;\n  transform: translateY(100%);\n  opacity: 0;\n  transition: all ease-in-out 0.3s;\n  padding: 0 10px;\n  ', ';\n  ', ';\n']);
 
 function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
@@ -28989,13 +28179,7 @@ var Notification = function Notification(_ref) {
 
   return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
     NotificationContainer,
-    Object.assign({}, rest, {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 7
-      },
-      __self: _this
-    }),
+    rest,
     msg
   );
 };
@@ -29031,8 +28215,6 @@ var NotificationContainer = __WEBPACK_IMPORTED_MODULE_2_styled_components__["a" 
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_classnames__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_classnames___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_classnames__);
-var _jsxFileName = '/Users/dalogon/Projects/12-technoactivity-projects/15-mymoid-styleguide/mymoid-style-guide/src/components/one_time_password/Code.js';
-
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
@@ -29251,12 +28433,7 @@ var Code = function (_Component) {
 
       return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         'div',
-        { className: classNames, style: styles.container, __source: {
-            fileName: _jsxFileName,
-            lineNumber: 180
-          },
-          __self: this
-        },
+        { className: classNames, style: styles.container },
         input.map(function (value, i) {
           return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', {
             ref: i,
@@ -29284,12 +28461,7 @@ var Code = function (_Component) {
             },
             disabled: disabled,
             'data-valid': isValid,
-            placeholder: '\u2022',
-            __source: {
-              fileName: _jsxFileName,
-              lineNumber: 182
-            },
-            __self: _this2
+            placeholder: '\u2022'
           });
         })
       );
@@ -29360,8 +28532,6 @@ var ThemedOtp = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_react_css_them
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
-var _jsxFileName = '/Users/dalogon/Projects/12-technoactivity-projects/15-mymoid-styleguide/mymoid-style-guide/src/components/spinner/activityIndicator.js';
-
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -29433,21 +28603,11 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
         className += this.props.className ? ' ' + this.props.className : '';
         return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           'div',
-          { style: containerStyle, className: className, __source: {
-              fileName: _jsxFileName,
-              lineNumber: 49
-            },
-            __self: this
-          },
+          { style: containerStyle, className: className },
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(ComposedComponent, Object.assign({}, this.props, {
             getFillStyle: this.getFillStyle,
             getBorderStyle: this.getBorderStyle,
-            style: indicatorStyle,
-            __source: {
-              fileName: _jsxFileName,
-              lineNumber: 50
-            },
-            __self: this
+            style: indicatorStyle
           }))
         );
       }
@@ -29486,8 +28646,6 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_classnames__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_classnames___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_classnames__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__font_icon__ = __webpack_require__(20);
-var _jsxFileName = '/Users/dalogon/Projects/12-technoactivity-projects/15-mymoid-styleguide/mymoid-style-guide/src/components/steps/Step.js';
-
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
@@ -29552,24 +28710,14 @@ var Step = function (_React$Component) {
 
       var iconNode = void 0;
       var iconDot = __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('span', {
-        className: __WEBPACK_IMPORTED_MODULE_2_classnames___default()(_defineProperty({}, theme[prefixCls + '-icon-dot'], true)),
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 40
-        },
-        __self: this
+        className: __WEBPACK_IMPORTED_MODULE_2_classnames___default()(_defineProperty({}, theme[prefixCls + '-icon-dot'], true))
       });
       // progressDot enjoy the highest priority
       if (progressDot) {
         if (typeof progressDot === 'function') {
           iconNode = __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'span',
-            { className: __WEBPACK_IMPORTED_MODULE_2_classnames___default()(_defineProperty({}, theme[prefixCls + '-icon'], true)), __source: {
-                fileName: _jsxFileName,
-                lineNumber: 48
-              },
-              __self: this
-            },
+            { className: __WEBPACK_IMPORTED_MODULE_2_classnames___default()(_defineProperty({}, theme[prefixCls + '-icon'], true)) },
             progressDot(iconDot, {
               index: stepNumber - 1,
               status: status,
@@ -29580,24 +28728,14 @@ var Step = function (_React$Component) {
         } else {
           iconNode = __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'span',
-            { className: __WEBPACK_IMPORTED_MODULE_2_classnames___default()(_defineProperty({}, theme[prefixCls + '-icon'], true)), __source: {
-                fileName: _jsxFileName,
-                lineNumber: 59
-              },
-              __self: this
-            },
+            { className: __WEBPACK_IMPORTED_MODULE_2_classnames___default()(_defineProperty({}, theme[prefixCls + '-icon'], true)) },
             iconDot
           );
         }
       } else if (icon && !isString(icon)) {
         iconNode = __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           'span',
-          { className: __WEBPACK_IMPORTED_MODULE_2_classnames___default()(_defineProperty({}, theme[prefixCls + '-icon'], true)), __source: {
-              fileName: _jsxFileName,
-              lineNumber: 66
-            },
-            __self: this
-          },
+          { className: __WEBPACK_IMPORTED_MODULE_2_classnames___default()(_defineProperty({}, theme[prefixCls + '-icon'], true)) },
           icon
         );
       } else if (icon || status === 'finish' || status === 'error') {
@@ -29610,27 +28748,12 @@ var Step = function (_React$Component) {
             fontSize: '12px',
             color: 'rgba(178, 211, 204, 100)',
             fontWeight: 'bold'
-          },
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 75
-          },
-          __self: this
-        }) : __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__font_icon__["a" /* FontIcon */], { value: 'clear', style: { fontSize: '12px' }, __source: {
-            fileName: _jsxFileName,
-            lineNumber: 84
-          },
-          __self: this
-        });
+          }
+        }) : __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__font_icon__["a" /* FontIcon */], { value: 'clear', style: { fontSize: '12px' } });
       } else {
         iconNode = __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           'span',
-          { className: __WEBPACK_IMPORTED_MODULE_2_classnames___default()(_defineProperty({}, theme[prefixCls + '-icon'], true)), __source: {
-              fileName: _jsxFileName,
-              lineNumber: 88
-            },
-            __self: this
-          },
+          { className: __WEBPACK_IMPORTED_MODULE_2_classnames___default()(_defineProperty({}, theme[prefixCls + '-icon'], true)) },
           stepNumber
         );
       }
@@ -29639,98 +28762,52 @@ var Step = function (_React$Component) {
         'div',
         Object.assign({}, restProps, {
           className: classString,
-          style: Object.assign({ width: itemWidth, marginRight: adjustMarginRight }, style),
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 100
-          },
-          __self: this
+          style: Object.assign({ width: itemWidth, marginRight: adjustMarginRight }, style)
         }),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           'div',
           {
             className: __WEBPACK_IMPORTED_MODULE_2_classnames___default()(_defineProperty({}, theme[prefixCls + '-tail'], true)),
-            style: { paddingRight: -adjustMarginRight },
-            __source: {
-              fileName: _jsxFileName,
-              lineNumber: 105
-            },
-            __self: this
+            style: { paddingRight: -adjustMarginRight }
           },
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', {
-            __source: {
-              fileName: _jsxFileName,
-              lineNumber: 109
-            },
-            __self: this
-          })
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', null)
         ),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           'div',
-          { className: __WEBPACK_IMPORTED_MODULE_2_classnames___default()(_defineProperty({}, theme[prefixCls + '-step'], true)), __source: {
-              fileName: _jsxFileName,
-              lineNumber: 111
-            },
-            __self: this
-          },
+          { className: __WEBPACK_IMPORTED_MODULE_2_classnames___default()(_defineProperty({}, theme[prefixCls + '-step'], true)) },
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'div',
             {
               className: __WEBPACK_IMPORTED_MODULE_2_classnames___default()(_defineProperty({}, theme[prefixCls + '-head'], true)),
               style: {
                 background: wrapperStyle.background || wrapperStyle.backgroundColor
-              },
-              __source: {
-                fileName: _jsxFileName,
-                lineNumber: 112
-              },
-              __self: this
+              }
             },
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
               'div',
               {
-                className: __WEBPACK_IMPORTED_MODULE_2_classnames___default()(_defineProperty({}, theme[prefixCls + '-head-inner'], true)),
-                __source: {
-                  fileName: _jsxFileName,
-                  lineNumber: 119
-                },
-                __self: this
+                className: __WEBPACK_IMPORTED_MODULE_2_classnames___default()(_defineProperty({}, theme[prefixCls + '-head-inner'], true))
               },
               iconNode
             )
           ),
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'div',
-            { className: __WEBPACK_IMPORTED_MODULE_2_classnames___default()(_defineProperty({}, theme[prefixCls + '-main'], true)), __source: {
-                fileName: _jsxFileName,
-                lineNumber: 127
-              },
-              __self: this
-            },
+            { className: __WEBPACK_IMPORTED_MODULE_2_classnames___default()(_defineProperty({}, theme[prefixCls + '-main'], true)) },
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
               'div',
               {
                 className: __WEBPACK_IMPORTED_MODULE_2_classnames___default()(_defineProperty({}, theme[prefixCls + '-title'], true)),
                 style: {
                   background: wrapperStyle.background || wrapperStyle.backgroundColor
-                },
-                __source: {
-                  fileName: _jsxFileName,
-                  lineNumber: 128
-                },
-                __self: this
+                }
               },
               title
             ),
             description ? __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
               'div',
               {
-                className: __WEBPACK_IMPORTED_MODULE_2_classnames___default()(_defineProperty({}, theme[prefixCls + '-description'], true)),
-                __source: {
-                  fileName: _jsxFileName,
-                  lineNumber: 138
-                },
-                __self: this
+                className: __WEBPACK_IMPORTED_MODULE_2_classnames___default()(_defineProperty({}, theme[prefixCls + '-description'], true))
               },
               description
             ) : ''
@@ -29780,8 +28857,6 @@ Step.propTypes = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_classnames___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_classnames__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_lodash__ = __webpack_require__(54);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_lodash___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_lodash__);
-var _jsxFileName = '/Users/dalogon/Projects/12-technoactivity-projects/15-mymoid-styleguide/mymoid-style-guide/src/components/steps/Steps.js';
-
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
@@ -29884,13 +28959,7 @@ var Steps = function (_React$Component) {
 
       return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         'div',
-        Object.assign({ className: classString, style: style }, restProps, {
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 81
-          },
-          __self: this
-        }),
+        Object.assign({ className: classString, style: style }, restProps),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.Children.map(children, function (ele, idx) {
           var itemWidth = direction === 'vertical' || idx === lastIndex || !reLayouted ? null : 100 / lastIndex + '%';
           var adjustMarginRight = direction === 'vertical' || idx === lastIndex ? null : -Math.round(_this2.state.lastStepOffsetWidth / lastIndex + 1);
@@ -29994,8 +29063,6 @@ var ThemedStep = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_react_css_the
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
-var _jsxFileName = '/Users/dalogon/Projects/12-technoactivity-projects/15-mymoid-styleguide/mymoid-style-guide/src/components/strike/Strike.js';
-
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -30052,26 +29119,11 @@ var Strike = function (_Component) {
 
       return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         'div',
-        { style: root, className: className, __source: {
-            fileName: _jsxFileName,
-            lineNumber: 46
-          },
-          __self: this
-        },
+        { style: root, className: className },
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           'span',
-          { style: main, __source: {
-              fileName: _jsxFileName,
-              lineNumber: 47
-            },
-            __self: this
-          },
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('span', { style: strikeStyle, __source: {
-              fileName: _jsxFileName,
-              lineNumber: 48
-            },
-            __self: this
-          }),
+          { style: main },
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('span', { style: strikeStyle }),
           children
         )
       );
@@ -30124,8 +29176,6 @@ Strike.defaultProps = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__identifiers__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ripple_Ripple__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__Thumb__ = __webpack_require__(47);
-var _jsxFileName = '/Users/dalogon/Projects/12-technoactivity-projects/15-mymoid-styleguide/mymoid-style-guide/src/components/switch/Switch.js';
-
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
@@ -30198,21 +29248,11 @@ var factory = function factory(Thumb) {
         var _className = __WEBPACK_IMPORTED_MODULE_2_classnames___default()(theme[disabled ? 'disabled' : 'field'], className);
         return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           'label',
-          { 'data-mymoid': 'switch', className: _className, __source: {
-              fileName: _jsxFileName,
-              lineNumber: 73
-            },
-            __self: this
-          },
+          { 'data-mymoid': 'switch', className: _className },
           this.props.leftLabel ? __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'span',
             {
-              className: __WEBPACK_IMPORTED_MODULE_2_classnames___default()(theme.textLeft, (_classnames = {}, _defineProperty(_classnames, theme['switch-on'], checked), _defineProperty(_classnames, theme['switch-off'], !checked), _classnames)),
-              __source: {
-                fileName: _jsxFileName,
-                lineNumber: 75
-              },
-              __self: this
+              className: __WEBPACK_IMPORTED_MODULE_2_classnames___default()(theme.textLeft, (_classnames = {}, _defineProperty(_classnames, theme['switch-on'], checked), _defineProperty(_classnames, theme['switch-off'], !checked), _classnames))
             },
             this.props.leftLabel
           ) : null,
@@ -30224,41 +29264,21 @@ var factory = function factory(Thumb) {
             ref: function ref(node) {
               _this2.inputNode = node;
             },
-            type: 'checkbox',
-            __source: {
-              fileName: _jsxFileName,
-              lineNumber: 84
-            },
-            __self: this
+            type: 'checkbox'
           })),
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'span',
-            { className: theme[checked ? 'on' : 'off'], __source: {
-                fileName: _jsxFileName,
-                lineNumber: 95
-              },
-              __self: this
-            },
+            { className: theme[checked ? 'on' : 'off'] },
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Thumb, {
               disabled: this.props.disabled,
               theme: theme,
-              ripple: ripple,
-              __source: {
-                fileName: _jsxFileName,
-                lineNumber: 96
-              },
-              __self: this
+              ripple: ripple
             })
           ),
           this.props.rightLabel ? __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'span',
             {
-              className: __WEBPACK_IMPORTED_MODULE_2_classnames___default()(theme.textRight, (_classnames2 = {}, _defineProperty(_classnames2, theme['switch-on'], checked), _defineProperty(_classnames2, theme['switch-off'], !checked), _classnames2)),
-              __source: {
-                fileName: _jsxFileName,
-                lineNumber: 103
-              },
-              __self: this
+              className: __WEBPACK_IMPORTED_MODULE_2_classnames___default()(theme.textRight, (_classnames2 = {}, _defineProperty(_classnames2, theme['switch-on'], checked), _defineProperty(_classnames2, theme['switch-off'], !checked), _classnames2))
             },
             this.props.rightLabel
           ) : null
@@ -30362,8 +29382,6 @@ var ThemedSwitch = applyTheme(__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1_
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__identifiers__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__TableHead__ = __webpack_require__(48);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__TableRow__ = __webpack_require__(49);
-var _jsxFileName = '/Users/dalogon/Projects/12-technoactivity-projects/15-mymoid-styleguide/mymoid-style-guide/src/components/table/Table.js';
-
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
@@ -30470,31 +29488,15 @@ var factory = function factory(TableHead, TableRow) {
 
         return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           'table',
-          Object.assign({}, rest, { className: __WEBPACK_IMPORTED_MODULE_2_classnames___default()(theme.table, className), __source: {
-              fileName: _jsxFileName,
-              lineNumber: 101
-            },
-            __self: this
-          }),
+          Object.assign({}, rest, { className: __WEBPACK_IMPORTED_MODULE_2_classnames___default()(theme.table, className) }),
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'thead',
-            { className: theme.head, __source: {
-                fileName: _jsxFileName,
-                lineNumber: 102
-              },
-              __self: this
-            },
+            { className: theme.head },
             this.renderHead()
           ),
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'tbody',
-            {
-              __source: {
-                fileName: _jsxFileName,
-                lineNumber: 103
-              },
-              __self: this
-            },
+            null,
             this.renderRows()
           )
         );
@@ -30595,8 +29597,6 @@ var ThemedTable = applyTheme(__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_4__
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__utils_isComponentOfType__ = __webpack_require__(26);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__Tab__ = __webpack_require__(50);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__TabContent__ = __webpack_require__(51);
-var _jsxFileName = '/Users/dalogon/Projects/12-technoactivity-projects/15-mymoid-styleguide/mymoid-style-guide/src/components/tabs/Tabs.js';
-
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
@@ -30735,12 +29735,7 @@ var factory = function factory(Tab, TabContent, FontIcon) {
             if (item.props.children) {
               contents.push(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 TabContent,
-                { theme: _this2.props.theme, __source: {
-                    fileName: _jsxFileName,
-                    lineNumber: 143
-                  },
-                  __self: _this2
-                },
+                { theme: _this2.props.theme },
                 item.props.children
               ));
             }
@@ -30815,34 +29810,14 @@ var factory = function factory(Tab, TabContent, FontIcon) {
 
         return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           'div',
-          { 'data-react-toolbox': 'tabs', className: classNames, __source: {
-              fileName: _jsxFileName,
-              lineNumber: 212
-            },
-            __self: this
-          },
+          { 'data-react-toolbox': 'tabs', className: classNames },
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'div',
-            { className: theme.navigationContainer, __source: {
-                fileName: _jsxFileName,
-                lineNumber: 213
-              },
-              __self: this
-            },
+            { className: theme.navigationContainer },
             hasLeftArrow && __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
               'div',
-              { className: theme.arrowContainer, onClick: this.scrollRight, __source: {
-                  fileName: _jsxFileName,
-                  lineNumber: 215
-                },
-                __self: this
-              },
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(FontIcon, { className: theme.arrow, value: 'keyboard_arrow_left', __source: {
-                  fileName: _jsxFileName,
-                  lineNumber: 216
-                },
-                __self: this
-              })
+              { className: theme.arrowContainer, onClick: this.scrollRight },
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(FontIcon, { className: theme.arrow, value: 'keyboard_arrow_left' })
             ),
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
               'nav',
@@ -30850,37 +29825,17 @@ var factory = function factory(Tab, TabContent, FontIcon) {
                 className: theme.navigation,
                 ref: function ref(node) {
                   _this5.navigationNode = node;
-                },
-                __source: {
-                  fileName: _jsxFileName,
-                  lineNumber: 219
-                },
-                __self: this
+                }
               },
               this.renderHeaders(headers),
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('span', { className: classNamePointer, style: this.state.pointer, __source: {
-                  fileName: _jsxFileName,
-                  lineNumber: 226
-                },
-                __self: this
-              })
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('span', { className: classNamePointer, style: this.state.pointer })
             ),
             hasRightArrow && __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
               'div',
-              { className: theme.arrowContainer, onClick: this.scrollLeft, __source: {
-                  fileName: _jsxFileName,
-                  lineNumber: 229
-                },
-                __self: this
-              },
+              { className: theme.arrowContainer, onClick: this.scrollLeft },
               __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(FontIcon, {
                 className: theme.arrow,
-                value: 'keyboard_arrow_right',
-                __source: {
-                  fileName: _jsxFileName,
-                  lineNumber: 230
-                },
-                __self: this
+                value: 'keyboard_arrow_right'
               })
             )
           ),
