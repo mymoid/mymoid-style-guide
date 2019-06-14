@@ -11,7 +11,10 @@ const DESC = 'desc';
 const factory = FontIcon => {
   class TableCell extends Component {
     static propTypes = {
-      children: PropTypes.node,
+      children: PropTypes.oneOfType([
+          PropTypes.arrayOf(PropTypes.node),
+          PropTypes.node
+      ]),
       className: PropTypes.string,
       column: PropTypes.number,
       numeric: PropTypes.bool,
