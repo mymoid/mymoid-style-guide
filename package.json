@@ -1,5 +1,5 @@
 {
-  "name": "mymoid-style-guide",
+  "name": "@mymoid/style-guide",
   "version": "1.0.0",
   "description": "",
   "main": "dist/mymoid-styleguide.js",
