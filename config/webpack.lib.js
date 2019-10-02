@@ -14,6 +14,7 @@ const extractTextPluginOptions = shouldUseRelativeAssetPaths
 module.exports = {
   entry: [paths.appIndexJs],
   devtool: 'cheap-module-source-map',
+  performance: { hints: false },
   module: {
     strictExportPresence: true,
     rules: [
@@ -136,6 +137,5 @@ module.exports = {
   },
   resolve: {
     extensions: ['.ts', '.tsx', '.js', '.json'],
-  },
-  watch: true
+  }
 }
