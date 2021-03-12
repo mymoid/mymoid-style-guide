@@ -54,7 +54,7 @@
     "ramda": "^0.26.1",
     "react": "^16.8.6",
     "react-css-themr": "^2.1.2",
-    "react-dev-utils": "^3.0.2",
+    "react-dev-utils": "^11.0.4",
     "react-dom": "^16.8.6",
     "react-style-proptype": "^3.0.0",
     "react-tooltip": "^3.5.1",
