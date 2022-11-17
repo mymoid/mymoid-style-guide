@@ -36,7 +36,7 @@
     "fs-extra": "3.0.1",
     "gulp": "^3.9.1",
     "gulp-util": "^3.0.8",
-    "html-webpack-plugin": "2.29.0",
+    "html-webpack-plugin": "5.5.0",
     "jest": "20.0.4",
     "object-assign": "4.1.1",
     "onesky-utils": "^1.2.0",
